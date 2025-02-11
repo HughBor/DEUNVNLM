@@ -2,7 +2,7 @@ const videoData = [
   {
     title: "动画视频 1",
     videoUrl: "videos/1.mp4",
-    thumbnail: "images/l.jpg"
+    thumbnail: "images/l.png"
   },
   {
     title: "动画视频 2",
