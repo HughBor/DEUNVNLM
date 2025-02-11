@@ -1,17 +1,17 @@
 const videoData = [
   {
     title: "动画视频 1",
-    videoUrl: "videos/video1.mp4",
-    thumbnail: "images/video1-thumbnail.jpg"
+    videoUrl: "videos/1.mp4",
+    thumbnail: "images/l.jpg"
   },
   {
     title: "动画视频 2",
-    videoUrl: "videos/video2.mp4",
+    videoUrl: "videos/2.mp4",
     thumbnail: "images/video2-thumbnail.jpg"
   },
   {
     title: "动画视频 3",
-    videoUrl: "videos/video3.mp4",
+    videoUrl: "videos/3.mp4",
     thumbnail: "images/video3-thumbnail.jpg"
   },
   // 添加更多视频项
