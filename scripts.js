@@ -47,15 +47,6 @@ const contentData = [
   {
     type: "video",
     title: "AI Landing Page",
-    contentUrl: "videos/003.mp4",
-    thumbnail: "images/A.jpg",
-    category: "三维",
-    contentId: "NO.007",
-    date: "2025-01-01"
-  },
-  {
-    type: "video",
-    title: "AI Landing Page",
     contentUrl: "videos/004.mp4",
     thumbnail: "images/A.jpg",
     category: "三维",
@@ -72,15 +63,6 @@ const contentData = [
     date: "2025-01-01"
   },
   {
-    type: "video",
-    title: "AI Landing Page",
-    contentUrl: "videos/006.mp4",
-    thumbnail: "images/A.jpg",
-    category: "三维",
-    contentId: "NO.010",
-    date: "2025-01-01"
-  },
-  {
     type: "image",
     title: "摄影图集",
     contentUrl: ["images/布料结构特写.jpg", "images/超哑面电子产品.jpg", "images/手持吸尘器.jpg"],
@@ -88,24 +70,6 @@ const contentData = [
     category: "摄影",
     contentId: "NO.009",
     date: "2025-02-15"
-  },
-  {
-    type: "video",
-    title: "AI Landing Page",
-    contentUrl: "videos/007.mp4",
-    thumbnail: "images/A.jpg",
-    category: "三维",
-    contentId: "NO.010",
-    date: "2025-01-01"
-  },
-  {
-    type: "video",
-    title: "AI Landing Page",
-    contentUrl: "videos/010.mp4",
-    thumbnail: "images/A.jpg",
-    category: "三维",
-    contentId: "NO.014",
-    date: "2025-01-01"
   },
 ];
 
