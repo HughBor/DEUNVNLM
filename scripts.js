@@ -19,12 +19,12 @@ const contentData = [
   },
   {
     type: "video",
-    title: "模型展示",
+    title: "Airpods Pro-Keyshot动画练习",
     contentUrl: "videos/Airpods Pro.mp4",
     thumbnail: "images/A.jpg",
     category: "三维",
     contentId: "Three-dimensional",
-    date: "2025-01-01"
+    date: "2025-02-23"
   },
   {
     type: "video",
