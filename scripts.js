@@ -75,7 +75,7 @@ const contentData = [
     category: "其它",
     contentId: "Other",
     date: "2025-02-15"
-  }, /* 以上是AI */
+  }, /* 以上是其它 */
 ];
 
 let currentPage = 1;
