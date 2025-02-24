@@ -55,7 +55,7 @@ const contentData = [
     category: "摄影",
     contentId: "Photographic",
     date: "2025-02-15"
-  }, /* 以上是AI */
+  }, /* 以上是摄影 */
   
   {
     type: "image",
@@ -65,7 +65,17 @@ const contentData = [
     category: "AI",
     contentId: "Artificial Intelligence",
     date: "2025-02-15"
-  }, /* 以上是其它 */
+  }, /* 以上是AI */
+
+  {
+    type: "image",
+    title: "XXXXX",
+    contentUrl: ["images/布料结构特写.jpg", "images/超哑面电子产品.jpg", "images/手持吸尘器.jpg"],
+    thumbnail: "images/布料结构特写.jpg",
+    category: "其它",
+    contentId: "Other",
+    date: "2025-02-15"
+  }, /* 以上是AI */
 ];
 
 let currentPage = 1;
