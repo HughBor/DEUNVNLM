@@ -21,7 +21,7 @@ const contentData = [
     type: "video",
     title: "Airpods Pro-Keyshot动画练习",
     contentUrl: "videos/Airpods Pro.mp4",
-    thumbnail: "images/A.jpg",
+    thumbnail: "images/Airpods Pro封面.jpg",
     category: "三维",
     contentId: "Three-dimensional",
     date: "2025-02-23"
@@ -30,10 +30,10 @@ const contentData = [
     type: "video",
     title: "模型展示",
     contentUrl: "videos/RTX4090.mp4",
-    thumbnail: "",
+    thumbnail: "images/RTX4090封面.jpg",
     category: "三维",
     contentId: "Three-dimensional",
-    date: "2025-01-01"
+    date: "2025-02-18"
   },
   {
     type: "image",
