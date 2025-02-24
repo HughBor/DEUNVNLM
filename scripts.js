@@ -36,15 +36,6 @@ const contentData = [
     date: "2025-01-01"
   },
   {
-    type: "video",
-    title: "模型展示",
-    contentUrl: "videos/002.mp4",
-    thumbnail: "",
-    category: "三维",
-    contentId: "NO.005",
-    date: "2025-01-01"
-  },
-  {
     type: "image",
     title: "摄影图集",
     contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
@@ -110,47 +101,11 @@ const contentData = [
   {
     type: "video",
     title: "AI Landing Page",
-    contentUrl: "videos/008.mp4",
-    thumbnail: "images/A.jpg",
-    category: "三维",
-    contentId: "NO.011",
-    date: "2025-01-01"
-  },
-  {
-    type: "video",
-    title: "AI Landing Page",
-    contentUrl: "videos/009.mp4",
-    thumbnail: "images/A.jpg",
-    category: "三维",
-    contentId: "NO.012",
-    date: "2025-01-01"
-  },
-  {
-    type: "image",
-    title: "平面图",
-    contentUrl: ["images/大黄蜂.jpg", "images/远古生物.png"],
-    thumbnail: "images/大黄蜂.jpg",
-    category: "平面",
-    contentId: "NO.013",
-    date: "2025-02-15"
-  },
-  {
-    type: "video",
-    title: "AI Landing Page",
     contentUrl: "videos/010.mp4",
     thumbnail: "images/A.jpg",
     category: "三维",
     contentId: "NO.014",
     date: "2025-01-01"
-  },
-  {
-    type: "image",
-    title: "摄影图集",
-    contentUrl: ["images/森林小屋.jpg", "images/多功能锅.jpg", "images/复古调蓝牙音箱.jpg"],
-    thumbnail: "images/森林小屋.jpg",
-    category: "摄影",
-    contentId: "NO.015",
-    date: "2025-02-15"
   },
 ];
 
