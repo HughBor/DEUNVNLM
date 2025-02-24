@@ -2,7 +2,7 @@ const contentData = [
   {
     type: "image",
     title: "微波炉海报-场景搭建",
-    contentUrl:["images/微波炉场景.jpg"],
+    contentUrl: ["images/微波炉场景.jpg"],
     thumbnail: "images/微波炉场景-封面.jpg",
     category: "平面",
     contentId: "Graphic",
