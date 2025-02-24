@@ -28,7 +28,7 @@ const contentData = [
   },
   {
     type: "video",
-    title: "模型展示",
+    title: "RTX4090-Keyshot动画练习",
     contentUrl: "videos/RTX4090.mp4",
     thumbnail: "images/RTX4090-封面.jpg",
     category: "三维",
