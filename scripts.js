@@ -1,12 +1,12 @@
 const contentData = [
   {
-    type: "video",
-    title: "AI Landing Page",
-    contentUrl: "videos/001.mp4",
-    thumbnail: "images/A.jpg",
-    category: "三维",
-    contentId: "NO.001",
-    date: "2025-01-01"
+    type: "image",
+    title: "微波炉海报-场景搭建",
+    contentUrl: "images/微波炉场景.jpg",
+    thumbnail: "images/微波炉场景-封面.jpg",
+    category: "平面",
+    contentId: "Graphic",
+    date: "2023-09-13"
   },
   {
     type: "image",
@@ -21,7 +21,7 @@ const contentData = [
     type: "video",
     title: "Airpods Pro-Keyshot动画练习",
     contentUrl: "videos/Airpods Pro.mp4",
-    thumbnail: "images/Airpods Pro封面.jpg",
+    thumbnail: "images/Airpods Pro-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional",
     date: "2025-02-23"
@@ -30,7 +30,7 @@ const contentData = [
     type: "video",
     title: "模型展示",
     contentUrl: "videos/RTX4090.mp4",
-    thumbnail: "images/RTX4090封面.jpg",
+    thumbnail: "images/RTX4090-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional",
     date: "2025-02-18"
