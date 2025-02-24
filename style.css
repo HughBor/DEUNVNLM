@@ -165,7 +165,7 @@ h1 {
   max-width: 1800px;
   margin: 0 auto;
   gap: 20px;
-  margin-top: 60px;
+  margin-top: 25px; /* 项目切换图标（全部、平面、物料...）与项目框本体间距 */
 }
 
 @media (min-width: 1600px) {
