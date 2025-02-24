@@ -164,7 +164,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   max-width: 1800px;
   margin: 0 auto;
-  gap: 20px 18px; /* 项目框本体之间的上下、左右间距 */
+  gap: 20px 16px; /* 项目框本体之间的上下、左右间距 */
   margin-top: 25px; /* 项目切换图标（全部、平面、物料...）与项目框本体间距 */
 }
 
