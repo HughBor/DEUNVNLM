@@ -31,7 +31,7 @@ const contentData = [
   {
     type: "video",
     title: "RTX4090-KS动画练习",
-    contentUrl: ["videos/RTX4090显卡.mp4"],
+    contentUrl: "videos/RTX4090显卡.mp4",
     thumbnail: "images/RTX4090-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional",
