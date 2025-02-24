@@ -35,16 +35,7 @@ const contentData = [
     contentId: "Three-dimensional",
     date: "2025-02-18"
   },
-  {
-    type: "image",
-    title: "摄影图集",
-    contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
-    thumbnail: "images/GoPro运动相机.jpg",
-    category: "摄影",
-    contentId: "Photographic",
-    date: "2025-02-15"
-  },
-  {
+    {
     type: "video",
     title: "AI Landing Page",
     contentUrl: "videos/004.mp4",
@@ -56,10 +47,19 @@ const contentData = [
   {
     type: "image",
     title: "摄影图集",
+    contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
+    thumbnail: "images/GoPro运动相机.jpg",
+    category: "摄影",
+    contentId: "Photographic",
+    date: "2025-02-15"
+  },
+  {
+    type: "image",
+    title: "电动升降桌场景图-MJ",
     contentUrl: ["images/布料结构特写.jpg", "images/超哑面电子产品.jpg", "images/手持吸尘器.jpg"],
     thumbnail: "images/布料结构特写.jpg",
-    category: "摄影",
-    contentId: "NO.009",
+    category: "AI",
+    contentId: "Artificial Intelligence",
     date: "2025-02-15"
   },
 ];
