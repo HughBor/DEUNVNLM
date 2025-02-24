@@ -14,12 +14,12 @@ const contentData = [
     contentUrl: ["images/DJI Inspire1.jpg", "images/DJI Inspire1-02.jpg","images/DJI Inspire1-03.jpg","images/DJI Inspire1遥控器.jpg","images/DJI Inspire1遥控器-2.jpg","images/DJI Inspire1遥控器-3.jpg"],
     thumbnail: "images/DJI Inspire1.jpg",
     category: "物料",
-    contentId: "NO.002",
+    contentId: "Materiel",
     date: "2025-02-15"
   },
   {
     type: "video",
-    title: "Airpods Pro-Keyshot动画练习",
+    title: "Airpods Pro-KS动画练习",
     contentUrl: "videos/Airpods Pro.mp4",
     thumbnail: "images/Airpods Pro-封面.jpg",
     category: "三维",
@@ -28,7 +28,7 @@ const contentData = [
   },
   {
     type: "video",
-    title: "RTX4090-Keyshot动画练习",
+    title: "RTX4090-KS动画练习",
     contentUrl: "videos/RTX4090.mp4",
     thumbnail: "images/RTX4090-封面.jpg",
     category: "三维",
@@ -41,7 +41,7 @@ const contentData = [
     contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
     thumbnail: "images/GoPro运动相机.jpg",
     category: "摄影",
-    contentId: "NO.006",
+    contentId: "Photographic",
     date: "2025-02-15"
   },
   {
@@ -51,15 +51,6 @@ const contentData = [
     thumbnail: "images/A.jpg",
     category: "三维",
     contentId: "NO.008",
-    date: "2025-01-01"
-  },
-  {
-    type: "video",
-    title: "AI Landing Page",
-    contentUrl: "videos/005.mp4",
-    thumbnail: "images/A.jpg",
-    category: "三维",
-    contentId: "NO.009",
     date: "2025-01-01"
   },
   {
