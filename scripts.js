@@ -21,8 +21,8 @@ const contentData = [
   {
     type: "image",
     title: "儿童益智画说明书",
-    contentUrl: ["images/PBD12说明书.jpg", "images/岩石画说明书.jpg","images/数字颜色迷宫板.jpg"],
-    thumbnail: "images/PBD12说明书-封面.jpg",
+    contentUrl: ["images/WuLiao/PBD12说明书.jpg", "images/岩石画说明书.jpg","images/数字颜色迷宫板.jpg"],
+    thumbnail: "images/WuLiao/PBD12说明书-封面.jpg",
     category: "物料",
     contentId: "Materiel 001",
     date: "2025-02-15"
