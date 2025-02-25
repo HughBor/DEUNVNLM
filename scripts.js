@@ -23,7 +23,7 @@ const contentData = [
     type: "video",
     title: "Airpods Pro-KS动画练习",
     contentUrl: "videos/Airpods Pro.mp4",
-    thumbnail: "images/Airpods Pro-封面.jpg",
+    thumbnail: "images/SanWei/Airpods Pro-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 001",
     date: "2025-02-23"
@@ -32,7 +32,7 @@ const contentData = [
     type: "video",
     title: "RTX4090-KS动画练习",
     contentUrl: "videos/RTX4090显卡.mp4",
-    thumbnail: "images/RTX4090-封面.jpg",
+    thumbnail: "images/SanWei/RTX4090-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 002",
     date: "2025-02-18"
@@ -40,8 +40,8 @@ const contentData = [
     {
     type: "image",
     title: "48/55/63系列电动升降桌-C4D静帧",
-    contentUrl: ["images/沃尔玛品牌横幅.jpg"],
-    thumbnail: "images/沃尔玛品牌横幅-封面.jpg",
+    contentUrl: ["images/SanWei/沃尔玛品牌横幅.jpg"],
+    thumbnail: "images/SanWei/沃尔玛品牌横幅-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 003",
     date: "2024-08-16"
@@ -50,7 +50,7 @@ const contentData = [
     type: "image",
     title: "GoPro运动相机-C4D静帧",
     contentUrl: ["images/GoPro运动相机.jpg"],
-    thumbnail: "images/GoPro运动相机-封面.jpg",
+    thumbnail: "images/SanWei/GoPro运动相机-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 004",
     date: "2021-12-04"
