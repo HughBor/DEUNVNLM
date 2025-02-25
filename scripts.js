@@ -47,7 +47,7 @@ const contentData = [
     date: "2025-02-18"
   },
     {
-    type: "video",
+    type: "image",
     title: "GoPro运动相机-C4D静帧",
     contentUrl: "images/GoPro运动相机.jpg",
     thumbnail: "images/GoPro运动相机-封面.jpg",
