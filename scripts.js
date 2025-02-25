@@ -39,7 +39,7 @@ const contentData = [
   },
     {
     type: "image",
-    title: "48/55/63系列电动升降桌",
+    title: "48/55/63系列电动升降桌-C4D静帧",
     contentUrl: ["images/沃尔玛品牌横幅.jpg"],
     thumbnail: "images/沃尔玛品牌横幅-封面.jpg",
     category: "三维",
@@ -49,7 +49,7 @@ const contentData = [
     {
     type: "image",
     title: "GoPro运动相机-C4D静帧",
-    contentUrl: "images/GoPro运动相机.jpg",
+    contentUrl: ["images/GoPro运动相机.jpg"],
     thumbnail: "images/GoPro运动相机-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 004",
