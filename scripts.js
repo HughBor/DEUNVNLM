@@ -40,7 +40,7 @@ const contentData = [
     {
     type: "video",
     title: "GoPro运动相机-C4D静帧",
-    contentUrl: "videos/GoPro运动相机.jpg",
+    contentUrl: "images/GoPro运动相机.jpg",
     thumbnail: "images/GoPro运动相机-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 003",
