@@ -46,13 +46,22 @@ const contentData = [
     contentId: "Three-dimensional 003",
     date: "2024-08-16"
   },
+  {
+    type: "video",
+    title: "铰链安装Demo-KS动画",
+    contentUrl: "videos/Work/铰链.mp4",
+    thumbnail: "images/SanWei/铰链-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 004",
+    date: "2024-03-18"
+  },
     {
     type: "image",
     title: "GoPro运动相机-C4D静帧",
     contentUrl: ["images/GoPro运动相机.jpg"],
     thumbnail: "images/SanWei/GoPro运动相机-封面.jpg",
     category: "三维",
-    contentId: "Three-dimensional 004",
+    contentId: "Three-dimensional 005",
     date: "2021-12-04"
   }, /* 以上是三维 */
   
