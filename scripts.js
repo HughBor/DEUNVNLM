@@ -1,11 +1,20 @@
 const contentData = [
+   {
+    type: "image",
+    title: "48/55/63系列电动升降桌",
+    contentUrl: ["images/沃尔玛品牌横幅.jpg"],
+    thumbnail: "images/沃尔玛品牌横幅-封面.jpg",
+    category: "平面",
+    contentId: "Graphic 002",
+    date: "2024-08-16"
+  },
   {
     type: "image",
     title: "微波炉海报-场景搭建",
     contentUrl: ["images/微波炉场景.jpg"],
     thumbnail: "images/微波炉场景-封面.jpg",
     category: "平面",
-    contentId: "Graphic",
+    contentId: "Graphic 001",
     date: "2023-09-13"
   }, /* 以上是平面 */
   
@@ -53,7 +62,7 @@ const contentData = [
     contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
     thumbnail: "images/GoPro运动相机.jpg",
     category: "摄影",
-    contentId: "Photographic",
+    contentId: "Photographic 001",
     date: "2025-02-15"
   }, /* 以上是摄影 */
   
@@ -63,7 +72,7 @@ const contentData = [
     contentUrl: ["images/布料结构特写.jpg", "images/超哑面电子产品.jpg", "images/手持吸尘器.jpg"],
     thumbnail: "images/布料结构特写.jpg",
     category: "AI",
-    contentId: "Artificial Intelligence",
+    contentId: "Artificial Intelligence 001",
     date: "2025-02-15"
   }, /* 以上是AI */
 
@@ -73,7 +82,7 @@ const contentData = [
     contentUrl: ["images/布料结构特写.jpg", "images/超哑面电子产品.jpg", "images/手持吸尘器.jpg"],
     thumbnail: "images/布料结构特写.jpg",
     category: "其它",
-    contentId: "Other",
+    contentId: "Other 001",
     date: "2025-02-15"
   }, /* 以上是其它 */
 ];
