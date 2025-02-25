@@ -11,11 +11,11 @@ const contentData = [
   
   {
     type: "image",
-    title: "产品设计图集",
-    contentUrl: ["images/DJI Inspire1.jpg", "images/DJI Inspire1-02.jpg","images/DJI Inspire1-03.jpg","images/DJI Inspire1遥控器.jpg","images/DJI Inspire1遥控器-2.jpg","images/DJI Inspire1遥控器-3.jpg"],
-    thumbnail: "images/DJI Inspire1.jpg",
+    title: "儿童益智画说明书",
+    contentUrl: ["images/PBD12说明书.jpg", "images/岩石画说明书.jpg","images/数字颜色迷宫板.jpg"],
+    thumbnail: "images/PBD12说明书-封面.jpg",
     category: "物料",
-    contentId: "Materiel",
+    contentId: "Materiel 001",
     date: "2025-02-15"
   }, /* 以上是物料 */
   
