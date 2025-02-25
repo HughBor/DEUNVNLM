@@ -16,7 +16,7 @@ const contentData = [
     thumbnail: "images/WuLiao/PBD12说明书-封面.jpg",
     category: "物料",
     contentId: "Materiel 001",
-    date: "2025-02-15"
+    date: "2022-08-20"
   }, /* 以上是物料 */
   
   {
