@@ -58,16 +58,6 @@ const contentData = [
   
   {
     type: "image",
-    title: "摄影图集",
-    contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
-    thumbnail: "images/GoPro运动相机.jpg",
-    category: "摄影",
-    contentId: "Photographic 001",
-    date: "2025-02-15"
-  }, /* 以上是摄影 */
-  
-  {
-    type: "image",
     title: "电动升降桌场景图-MJ",
     contentUrl: ["images/布料结构特写.jpg", "images/超哑面电子产品.jpg", "images/手持吸尘器.jpg"],
     thumbnail: "images/布料结构特写.jpg",
@@ -75,6 +65,16 @@ const contentData = [
     contentId: "Artificial Intelligence 001",
     date: "2025-02-15"
   }, /* 以上是AI */
+
+  {
+    type: "image",
+    title: "摄影图集",
+    contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
+    thumbnail: "images/GoPro运动相机.jpg",
+    category: "摄影",
+    contentId: "Photographic 001",
+    date: "2025-02-15"
+  }, /* 以上是摄影 */
 
   {
     type: "image",
