@@ -66,7 +66,7 @@ const contentData = [
   },
     {
     type: "image",
-    title: "GoPro运动相机-C4D静帧",
+    title: "GoPro运动相机-C4D静帧练习",
     contentUrl: ["images/SanWei/GoPro运动相机.jpg"],
     thumbnail: "images/SanWei/GoPro运动相机-封面.jpg",
     category: "三维",
