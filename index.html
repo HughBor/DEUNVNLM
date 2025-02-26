@@ -6,6 +6,7 @@
   <link rel="icon" href="images/H.jpg" type="image/x-icon">
   <title>HughBor作品集</title>
   <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- 公共头部 -->
@@ -94,5 +95,15 @@
   </footer>
 
   <script src="scripts.js"></script>
+  <script>
+    // 页面加载时触发烟花特效
+    window.onload = function() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
 </body>
 </html>
