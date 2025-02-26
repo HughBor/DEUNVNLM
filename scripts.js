@@ -21,6 +21,15 @@ const contentData = [
   
   {
     type: "video",
+    title: "行李箱-KS动画练习",
+    contentUrl: "videos/行李箱.mp4",
+    thumbnail: "images/SanWei/行李箱-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 006",
+    date: "2025-02-26"
+  },
+  {
+    type: "video",
     title: "Airpods Pro-KS动画练习",
     contentUrl: "videos/Airpods Pro.mp4",
     thumbnail: "images/SanWei/Airpods Pro-封面.jpg",
