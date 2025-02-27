@@ -6,7 +6,8 @@ const contentData = [
     thumbnail: "images/微波炉场景-封面.jpg",
     category: "平面",
     contentId: "Graphic 001",
-    date: "2023-09-13"
+    date: "2023-09-13",
+  description: "这是微波炉海报的场景搭建设计。" // 新增的文本内容
   }, /* 以上是平面 */
   
   {
