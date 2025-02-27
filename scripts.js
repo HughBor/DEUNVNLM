@@ -1,67 +1,78 @@
 const contentData = [
-  {
+ {
     type: "image",
     title: "微波炉海报-场景搭建",
     contentUrl: ["images/微波炉场景.jpg"],
     thumbnail: "images/微波炉场景-封面.jpg",
     category: "平面",
-    contentId: "Graphic",
-    date: "2023-09-13",
-    description: "这是微波炉海报的场景搭建设计。" // 新增的文本内容
+    contentId: "Graphic 001",
+    date: "2023-09-13"
   }, /* 以上是平面 */
   
   {
     type: "image",
-    title: "产品设计图集",
-    contentUrl: ["images/DJI Inspire1.jpg", "images/DJI Inspire1-02.jpg","images/DJI Inspire1-03.jpg","images/DJI Inspire1遥控器.jpg","images/DJI Inspire1遥控器-2.jpg","images/DJI Inspire1遥控器-3.jpg"],
-    thumbnail: "images/DJI Inspire1.jpg",
+    title: "儿童益智画说明书",
+    contentUrl: ["images/WuLiao/PBD12说明书.jpg", "images/WuLiao/岩石画说明书.jpg","images/WuLiao/数字颜色迷宫板.jpg"],
+    thumbnail: "images/WuLiao/PBD12说明书-封面.jpg",
     category: "物料",
-    contentId: "Materiel",
-    date: "2025-02-15",
-    description: "这是微波炉海报的场景搭建设计。" // 新增的文本内容
+    contentId: "Materiel 001",
+    date: "2022-08-20"
   }, /* 以上是物料 */
   
   {
     type: "video",
+    title: "行李箱-KS动画练习",
+    contentUrl: "videos/行李箱.mp4",
+    thumbnail: "images/SanWei/行李箱-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 006",
+    date: "2025-02-26"
+  },
+  {
+    type: "video",
     title: "Airpods Pro-KS动画练习",
     contentUrl: "videos/Airpods Pro.mp4",
-    thumbnail: "images/Airpods Pro-封面.jpg",
+    thumbnail: "images/SanWei/Airpods Pro-封面.jpg",
     category: "三维",
-    contentId: "Three-dimensional01",
-    date: "2025-02-23",
-    description: "" // 新增的文本内容
+    contentId: "Three-dimensional 005",
+    date: "2025-02-23"
   },
   {
     type: "video",
     title: "RTX4090-KS动画练习",
     contentUrl: "videos/RTX4090显卡.mp4",
-    thumbnail: "images/RTX4090-封面.jpg",
+    thumbnail: "images/SanWei/RTX4090-封面.jpg",
     category: "三维",
-    contentId: "Three-dimensional02",
-    date: "2025-02-18",
-    description: "" // 新增的文本内容
+    contentId: "Three-dimensional 004",
+    date: "2025-02-18"
   },
     {
-    type: "video",
-    title: "GoPro运动相机-C4D静帧",
-    contentUrl: "videos/GoPro运动相机.jpg",
-    thumbnail: "images/GoPro运动相机-封面.jpg",
-    category: "三维",
-    contentId: "Three-dimensional03",
-    date: "2021-12-04",
-    description: "" // 新增的文本内容
-  }, /* 以上是三维 */
-  
-  {
     type: "image",
-    title: "摄影图集",
-    contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
-    thumbnail: "images/GoPro运动相机.jpg",
-    category: "摄影",
-    contentId: "Photographic",
-    date: "2025-02-15",
-    description: "" // 新增的文本内容
-  }, /* 以上是摄影 */
+    title: "48/55/63系列电动升降桌-C4D静帧",
+    contentUrl: ["images/SanWei/沃尔玛品牌横幅.jpg"],
+    thumbnail: "images/SanWei/沃尔玛品牌横幅-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 003",
+    date: "2024-08-16"
+  },
+  {
+    type: "video",
+    title: "铰链安装Demo-KS动画",
+    contentUrl: "videos/Work/铰链.mp4",
+    thumbnail: "images/SanWei/铰链-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 002",
+    date: "2024-03-18"
+  },
+    {
+    type: "image",
+    title: "GoPro运动相机-C4D静帧练习",
+    contentUrl: ["images/SanWei/GoPro运动相机.jpg"],
+    thumbnail: "images/SanWei/GoPro运动相机-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 001",
+    date: "2021-12-04"
+  }, /* 以上是三维 */
   
   {
     type: "image",
@@ -69,10 +80,19 @@ const contentData = [
     contentUrl: ["images/布料结构特写.jpg", "images/超哑面电子产品.jpg", "images/手持吸尘器.jpg"],
     thumbnail: "images/布料结构特写.jpg",
     category: "AI",
-    contentId: "Artificial Intelligence",
-    date: "2025-02-15",
-    description: "" // 新增的文本内容
+    contentId: "Artificial Intelligence 001",
+    date: "2025-02-15"
   }, /* 以上是AI */
+
+  {
+    type: "image",
+    title: "摄影图集",
+    contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
+    thumbnail: "images/GoPro运动相机.jpg",
+    category: "摄影",
+    contentId: "Photographic 001",
+    date: "2025-02-15"
+  }, /* 以上是摄影 */
 
   {
     type: "image",
@@ -80,9 +100,8 @@ const contentData = [
     contentUrl: ["images/布料结构特写.jpg", "images/超哑面电子产品.jpg", "images/手持吸尘器.jpg"],
     thumbnail: "images/布料结构特写.jpg",
     category: "其它",
-    contentId: "Other",
-    date: "2025-02-15",
-    description: "" // 新增的文本内容
+    contentId: "Other 001",
+    date: "2025-02-15"
   }, /* 以上是其它 */
 ];
 
