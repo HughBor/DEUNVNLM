@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: background 0.3s ease, color 0.3s ease;
-  cursor: url('images/spaceship-cursor.png') 15 15, auto;
+  cursor: url('images/icon/spaceship-cursor.png') 15 15, auto;
 }
 
 
@@ -31,7 +31,7 @@ body {
 .pagination-arrow:hover,
 .close-modal:hover,
 .image-row img:hover {
-  cursor: url('images/hover-cursor.png') 20 20, pointer; /* 替换为你的悬停光标图片 */
+  cursor: url('images/icon/hover-cursor.png') 20 20, pointer; /* 替换为你的悬停光标图片 */
 }
 
 .cursor-trail {
@@ -61,7 +61,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: url('images/spaceship-flame.png') no-repeat center center;
+  background: url('images/icon/spaceship-flame.png') no-repeat center center;
   background-size: contain;
   animation: flame 0.5s ease-out;
   pointer-events: none;
