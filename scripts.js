@@ -50,7 +50,7 @@ const contentData = [
     {
     type: "image",
     title: "48/55/63系列电动升降桌-C4D静帧",
-    contentUrl: ["images/SanWei/沃尔玛品牌横幅.jpg", "images/SanWei/A+电机管材.jpg"],
+    contentUrl: ["images/SanWei/沃尔玛品牌横幅.jpg","images/SanWei/A+电机管材.jpg"],
     thumbnail: "images/SanWei/沃尔玛品牌横幅-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 003",
