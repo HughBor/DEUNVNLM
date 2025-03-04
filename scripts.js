@@ -19,7 +19,16 @@ const contentData = [
     contentId: "Materiel 001",
     date: "2022-08-20"
   }, /* 以上是物料 */
-  
+
+ {
+    type: "video",
+    title: "大疆灵眸云台-KS动画练习",
+    contentUrl: "videos/大疆灵眸云台.mp4",
+    thumbnail: "images/SanWei/大疆灵眸云台-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 007",
+    date: "2025-03-24"
+  },
   {
     type: "video",
     title: "行李箱-KS动画练习",
