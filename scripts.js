@@ -27,7 +27,7 @@ const contentData = [
     thumbnail: "images/SanWei/大疆灵眸云台-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 007",
-    date: "2025-03-24"
+    date: "2025-03-04"
   },
   {
     type: "video",
