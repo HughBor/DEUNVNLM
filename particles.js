@@ -53,7 +53,7 @@ class ParticleSystem {
       if (p.y < 0) p.y = this.canvas.height;
       
       p.alpha = p.baseAlpha * (Math.sin(Date.now() * p.twinkleSpeed) + 1.2);
-      this.ctx.fillStyle = this.isDarkMode ? `rgba(255, 255, 255, ${p.alpha})` : `rgba(180, 217, 255, ${p.alpha})`;//粒子颜色
+      this.ctx.fillStyle = this.isDarkMode ? `rgba(255, 255, 255, ${p.alpha})` : `rgba(180, 180, 180, ${p.alpha})`;//粒子颜色
       this.ctx.beginPath();
       this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
       this.ctx.fill();
