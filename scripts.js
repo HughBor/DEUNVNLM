@@ -23,11 +23,12 @@ const contentData = [
  {
     type: "video",
     title: "大疆灵眸云台-KS动画练习",
-    contentUrl: "videos/大疆灵眸云台.mp4",
+    contentUrl: ["videos/大疆灵眸云台.mp4","videos/口红.mp4"],
     thumbnail: "images/SanWei/大疆灵眸云台-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 007",
-    date: "2025-03-04"
+    date: "2025-03-04",
+    description: "有关一个云台的运动动画和一只口红的扫光动画练习。" // 新增的文本内容
   },
   {
     type: "video",
