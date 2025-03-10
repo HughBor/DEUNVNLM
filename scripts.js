@@ -23,8 +23,8 @@ const contentData = [
  {
     type: "image",
     title: "汽车专题渲染-C4D静帧练习",
-    contentUrl: ["images/SanWei/车轮01.jpg"],
-    thumbnail: "images/SanWei/车轮01-封面.jpg",
+    contentUrl: ["images/SanWei/Auto/车轮01.jpg"],
+    thumbnail: "images/SanWei/Auto/车轮01-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 008",
     date: "2025-03-10"
