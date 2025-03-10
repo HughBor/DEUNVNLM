@@ -21,6 +21,15 @@ const contentData = [
   }, /* 以上是物料 */
 
  {
+    type: "image",
+    title: "汽车专题渲染-C4D静帧练习",
+    contentUrl: ["images/SanWei/车轮01.jpg"],
+    thumbnail: "images/SanWei/车轮01-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 008",
+    date: "2025-03-10"
+  },
+ {
     type: "video",
     title: "大疆灵眸云台-KS动画练习",
     contentUrl: ["videos/大疆灵眸云台.mp4","videos/口红.mp4"],
