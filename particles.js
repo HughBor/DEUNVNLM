@@ -41,7 +41,7 @@ class ParticleSystem {
 
   animate() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    this.ctx.fillStyle = this.isDarkMode ? 'rgba(10, 10, 10, 0.8)' : 'rgba(255, 255, 255, 0.8)';//背景颜色
+    this.ctx.fillStyle = this.isDarkMode ? 'rgba(30, 30, 30, 0.8)' : 'rgba(255, 255, 255, 0.8)';//背景颜色
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
     this.particles.forEach(p => {
