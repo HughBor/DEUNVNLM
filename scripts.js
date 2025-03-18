@@ -6,7 +6,7 @@ const contentData = [
     thumbnail: "images/微波炉场景-封面.jpg",
     category: "平面",
     contentId: "Graphic 001",
-    date: "2023-09-13",
+    date: "2023-09",
     description: "这是微波炉海报的场景搭建设计。" // 新增的文本内容
   }, /* 以上是平面 */
   
@@ -17,7 +17,7 @@ const contentData = [
     thumbnail: "images/WuLiao/PBD12说明书-封面.jpg",
     category: "物料",
     contentId: "Materiel 001",
-    date: "2022-08-20"
+    date: "2022-08"
   }, /* 以上是物料 */
 
  {
@@ -27,7 +27,7 @@ const contentData = [
     thumbnail: "images/SanWei/Auto/车轮01-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 008",
-    date: "2025-03-10"
+    date: "2025-03"
   },
  {
     type: "video",
@@ -36,7 +36,7 @@ const contentData = [
     thumbnail: "images/SanWei/大疆灵眸云台-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 007",
-    date: "2025-03-04",
+    date: "2025-03",
     description: "有关一个云台的运动动画和一只口红的扫光动画练习。" // 新增的文本内容
   },
   {
@@ -46,7 +46,7 @@ const contentData = [
     thumbnail: "images/SanWei/行李箱-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 006",
-    date: "2025-02-26"
+    date: "2025-02"
   },
   {
     type: "video",
@@ -55,7 +55,7 @@ const contentData = [
     thumbnail: "images/SanWei/Airpods Pro-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 005",
-    date: "2025-02-23"
+    date: "2025-02"
   },
   {
     type: "video",
@@ -64,7 +64,7 @@ const contentData = [
     thumbnail: "images/SanWei/RTX4090-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 004",
-    date: "2025-02-18"
+    date: "2025-02"
   },
     {
     type: "image",
@@ -73,7 +73,7 @@ const contentData = [
     thumbnail: "images/SanWei/沃尔玛品牌横幅-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 003",
-    date: "2024-08-16"
+    date: "2024-08"
   },
   {
     type: "video",
@@ -82,7 +82,7 @@ const contentData = [
     thumbnail: "images/SanWei/铰链-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 002",
-    date: "2024-03-18"
+    date: "2024-03"
   },
     {
     type: "image",
@@ -91,7 +91,7 @@ const contentData = [
     thumbnail: "images/SanWei/GoPro运动相机-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 001",
-    date: "2021-12-04"
+    date: "2021-12"
   }, /* 以上是三维 */
   
   {
@@ -101,7 +101,7 @@ const contentData = [
     thumbnail: "images/布料结构特写.jpg",
     category: "AI",
     contentId: "Artificial Intelligence 001",
-    date: "2025-02-15"
+    date: "2025-02"
   }, /* 以上是AI */
 
   {
@@ -111,7 +111,7 @@ const contentData = [
     thumbnail: "images/GoPro运动相机.jpg",
     category: "摄影",
     contentId: "Photographic 001",
-    date: "2025-02-15"
+    date: "2025-02"
   }, /* 以上是摄影 */
 
   {
@@ -121,7 +121,7 @@ const contentData = [
     thumbnail: "images/布料结构特写.jpg",
     category: "其它",
     contentId: "Other 001",
-    date: "2025-02-15"
+    date: "2025-02"
   }, /* 以上是其它 */
 ];
 
