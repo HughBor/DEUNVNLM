@@ -2,8 +2,8 @@ const contentData = [
  {
     type: "image",
     title: "微波炉海报-场景搭建",
-    contentUrl: ["images/微波炉场景.jpg"],
-    thumbnail: "images/微波炉场景-封面.jpg",
+    contentUrl: ["images/PingMian/微波炉场景.jpg"],
+    thumbnail: "images/PingMian/微波炉场景-封面.jpg",
     category: "平面",
     contentId: "Graphic 002",
     date: "2023-09",
@@ -12,8 +12,8 @@ const contentData = [
   {
     type: "image",
     title: "往期修图回顾-2025以前",
-    contentUrl: ["images/修图2307-黑色铁艺灯.jpg"],
-    thumbnail: "images/修图2307-黑色铁艺灯封面.jpg",
+    contentUrl: ["images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg"],
+    thumbnail: "images/PingMian/XiuTu/修图2307-黑色铁艺灯封面.jpg",
     category: "平面",
     contentId: "Graphic 001",
     date: "2023-07",
