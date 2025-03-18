@@ -5,10 +5,19 @@ const contentData = [
     contentUrl: ["images/微波炉场景.jpg"],
     thumbnail: "images/微波炉场景-封面.jpg",
     category: "平面",
-    contentId: "Graphic 001",
+    contentId: "Graphic 002",
     date: "2023-09",
     description: "这是微波炉海报的场景搭建设计。" // 新增的文本内容
-  }, /* 以上是平面 */
+  }, 
+  {
+    type: "image",
+    title: "往期修图回顾-2025以前",
+    contentUrl: ["images/修图2307-黑色铁艺灯.jpg"],
+    thumbnail: "images/修图2307-黑色铁艺灯封面.jpg",
+    category: "平面",
+    contentId: "Graphic 001",
+    date: "2023-07",
+  },/* 以上是平面 */
   
   {
     type: "image",
