@@ -11,7 +11,7 @@ const contentData = [
   }, 
   {
     type: "image",
-    title: "往期修图回顾-2025以前",
+    title: "修图回顾-2024及之前",
     contentUrl: ["images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg"],
     thumbnail: "images/PingMian/XiuTu/修图2307-黑色铁艺灯封面.jpg",
     category: "平面",
