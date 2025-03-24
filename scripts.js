@@ -30,6 +30,15 @@ const contentData = [
   }, /* 以上是物料 */
 
  {
+    type: "video",
+    title: "L型升降桌安装Demo-KS动画",
+    contentUrl: ["videos/Work/L型升降桌-安装视频 无文案.mp4"],
+    thumbnail: "images/SanWei/铰链-封面.jpg",
+    category: "三维",
+    contentId: "Three-dimensional 009",
+    date: "2025-03"
+  },
+ {
     type: "image",
     title: "汽车专题渲染-C4D静帧练习",
     contentUrl: ["images/SanWei/Auto/车轮01.jpg"],
