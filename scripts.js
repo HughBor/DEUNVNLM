@@ -41,7 +41,8 @@ const contentData = [
  {
     type: "image",
     title: "汽车专题渲染-C4D静帧练习",
-    contentUrl: ["images/SanWei/Auto/车轮01.jpg","images//SanWei/Auto/Benz 300SL-01.jpg"，"images//SanWei/Auto/Benz 300SL-02.jpg"，"images//SanWei/Auto/Benz 300SL-03.jpg"，"images//SanWei/Auto/三维2207-奥迪Q7内饰.jpg"],
+    contentUrl: ["images/SanWei/Auto/车轮01.jpg","images//SanWei/Auto/Benz 300SL-01.jpg"，"images//SanWei/Auto/Benz 300SL-02.jpg"，"images//SanWei/Auto/Benz 300SL-03.jpg"，"images//SanWei/Auto/02 主图黑色.jpg"，
+                 "images//SanWei/Auto/03 轮胎.jpg"，"images//SanWei/Auto/05 几何.jpg"，"images//SanWei/Auto/07 俯视.jpg"，"images//SanWei/Auto/三维2207-奥迪Q7内饰.jpg"],
     thumbnail: "images/SanWei/Auto/车轮01-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 008",
