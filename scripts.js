@@ -105,7 +105,7 @@ const contentData = [
   },
     {
     type: "image",
-    title: "三维专题静帧渲染-2024及之前",
+    title: "三维专题渲染-2024及之前",
     contentUrl: ["images/SanWei/GoPro运动相机.jpg"],
     thumbnail: "images/SanWei/GoPro运动相机-封面.jpg",
     category: "三维",
