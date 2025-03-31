@@ -105,12 +105,12 @@ const contentData = [
   },
     {
     type: "image",
-    title: "GoPro运动相机-C4D静帧练习",
+    title: "三维专题静帧渲染-2024及之前",
     contentUrl: ["images/SanWei/GoPro运动相机.jpg"],
     thumbnail: "images/SanWei/GoPro运动相机-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 001",
-    date: "2021-12"
+    date: "2023-03"
   }, /* 以上是三维 */
   
   {
