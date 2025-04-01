@@ -106,7 +106,7 @@ const contentData = [
     {
     type: "image",
     title: "三维专题渲染-2024及之前",
-    contentUrl: ["images/SanWei/Before 2025/三维2303-B&O头戴式耳机.jpg", "images/SanWei/Before 2025/GoPro运动相机.jpg"],
+    contentUrl: ["images/SanWei/Before 2025/三维2304-Vicis01橄榄球头盔.jpg", "images/SanWei/Before 2025/三维2303-B&O头戴式耳机.jpg", "images/SanWei/Before 2025/GoPro运动相机.jpg"],
     thumbnail: "images/SanWei/Before 2025/GoPro运动相机-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 001",
