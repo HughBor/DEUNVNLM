@@ -42,7 +42,7 @@ const contentData = [
     type: "image",
     title: "汽车专题渲染-C4D静帧练习",
     contentUrl: ["images/SanWei/Auto/车轮01.jpg","images//SanWei/Auto/Benz 300SL-01.jpg","images//SanWei/Auto/Benz 300SL-02.jpg","images//SanWei/Auto/Benz 300SL-03.jpg","images//SanWei/Auto/02 主图黑色.jpg",
-                 "images//SanWei/Auto/03 轮胎.jpg","images//SanWei/Auto/05 几何.jpg","images//SanWei/Auto/07 俯视.jpg","images//SanWei/Auto/三维2207-奥迪Q7内饰.jpg"],
+                 "images//SanWei/Auto/03 轮胎.jpg","images//SanWei/Auto/05 几何.jpg","images//SanWei/Auto/07 俯视.jpg","images//SanWei/Auto/Audi RS6 Avant 01.jpg","images//SanWei/Auto/三维2207-奥迪Q7内饰.jpg"],
     thumbnail: "images/SanWei/Auto/车轮01-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 008",
@@ -106,7 +106,7 @@ const contentData = [
     {
     type: "image",
     title: "三维专题渲染-2024及之前",
-    contentUrl: ["images/SanWei/Before 2025/三维2304-Vicis01橄榄球头盔.jpg", "images/SanWei/Before 2025/三维2303-B&O头戴式耳机.jpg", "images/SanWei/Before 2025/GoPro运动相机.jpg"],
+    contentUrl: ["images/SanWei/Before 2025/三维2304-Vicis01橄榄球头盔.jpg","images/SanWei/Before 2025/三维2303-B&O头戴式耳机.jpg","images/SanWei/Before 2025/GoPro运动相机.jpg"],
     thumbnail: "images/SanWei/Before 2025/GoPro运动相机-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 001",
