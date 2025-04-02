@@ -220,9 +220,19 @@ function initCommon() {
 
 /* ================= 首页功能 ================= */
 function displayContent(page, category) {
-  const filteredData = category === "全部" 
-    ? contentData 
+  let filteredData = category === "全部" 
+    ? [...contentData] // 创建副本避免修改原数组
     : contentData.filter(item => item.category === category);
+  
+  // 如果是"全部"分类，则按日期降序排列
+  if (category === "全部") {
+    filteredData.sort((a, b) => {
+      // 将日期字符串转换为Date对象进行比较
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateB - dateA; // 降序排列
+    });
+  }
   
   const startIndex = (page - 1) * itemsPerPage;
   const currentItems = filteredData.slice(startIndex, startIndex + itemsPerPage);
