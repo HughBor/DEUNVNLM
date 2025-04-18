@@ -31,8 +31,8 @@ const contentData = [
 
  {
     type: "video",
-    title: "L型升降桌安装Demo-KS动画",
-    contentUrl: ["videos/Work/L型升降桌-安装视频 无文案.mp4"],
+    title: "电动升降桌安装动画系列Demo-KS动画",
+    contentUrl: ["videos/Work/电动升降桌1200-安装视频 无配件文案 压缩.mp4", "videos/Work/L型升降桌-安装视频 无文案.mp4"],
     thumbnail: "images/SanWei/L型升降桌-安装视频 无文案封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 009",
