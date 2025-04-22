@@ -22,7 +22,7 @@ const contentData = [
     type: "image",
     title: "节日/产品海报展示",
     contentUrl: ["images/PingMian/HaiBao/海报2011-黑五网一.jpg"],
-    thumbnail: "images/PingMian/XiuTu/修图2307-黑色铁艺灯封面.jpg",
+    thumbnail: "images/PingMian/HaiBao/海报2011-黑五网一封面.jpg",
     category: "平面",
     contentId: "Graphic 001",
     date: "2020-11",
