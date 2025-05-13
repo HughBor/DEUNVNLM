@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/H.jpg" type="image/x-icon">
+  <title>网站内容管理系统</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #56becf;
+      --danger-color: #ff6b6b;
+      --sidebar-width: 250px;
+      --header-height: 70px;
+      --transition-speed: 0.3s;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f5f7fa;
+    }
+    
+    /* 侧边栏样式 */
+    .sidebar {
+      width: var(--sidebar-width);
+      background: #2c3e50;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      transition: all var(--transition-speed);
+      z-index: 100;
+    }
+    
+    .sidebar-header {
+      padding: 20px;
+      background: #1a252f;
+      display: flex;
+      align-items: center;
+    }
+    
+    .sidebar-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .sidebar-menu {
+      padding: 20px 0;
+    }
+    
+    .menu-item {
+      padding: 12px 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+    }
+    
+    .menu-item:hover {
+      background: #34495e;
+    }
+    
+    .menu-item.active {
+      background: var(--primary-color);
+    }
+    
+    .menu-item i {
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+    }
+    
+    /* 主内容区样式 */
+    .main-content {
+      flex: 1;
+      margin-left: var(--sidebar-width);
+      transition: all var(--transition-speed);
+    }
+    
+    header {
+      height: var(--header-height);
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+    }
+    
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    
+    .header-left img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
+    
+    /* 编辑器面板样式 */
+    .content-area {
+      padding: 20px;
+    }
+    
+    .editor-panel {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #555;
+    }
+    
+    input[type="text"], 
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: border 0.3s;
+    }
+    
+    input[type="text"]:focus, 
+    textarea:focus,
+    select:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+    
+    button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    
+    button:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+    
+    button.danger {
+      background: var(--danger-color);
+    }
+    
+    /* 搜索栏样式 */
+    .search-bar {
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .search-bar input {
+      padding-left: 40px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23555" width="18px" height="18px"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: 12px center;
+    }
+    
+    /* 项目列表样式 */
+    .projects-container {
+      margin-top: 20px;
+    }
+    
+    .project-item {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-left: 4px solid var(--primary-color);
+      transition: all 0.2s;
+    }
+    
+    .project-item:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .project-item h3 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+    
+    .project-category {
+      color: var(--primary-color);
+      font-size: 0.9em;
+    }
+    
+    .project-meta {
+      color: #777;
+      font-size: 0.85em;
+      margin: 8px 0;
+      display: flex;
+      gap: 15px;
+    }
+    
+    .project-description {
+      color: #555;
+      margin: 10px 0;
+      font-size: 0.95em;
+    }
+    
+    .project-actions {
+      margin-top: 15px;
+      display: flex;
+      gap: 10px;
+    }
+    
+    /* 项目表单样式 */
+    .project-form {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border: 1px solid #eee;
+      display: none;
+    }
+    
+    .preview-container {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .preview-container img,
+    .preview-container video {
+      max-width: 200px;
+      max-height: 150px;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      object-fit: cover;
+    }
+    
+    /* 加载状态 */
+    .loading {
+      text-align: center;
+      padding: 50px;
+      color: #777;
+    }
+    
+    .error {
+      color: var(--danger-color);
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* 标签选项卡样式 */
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    
+    .category-tab {
+      padding: 8px 15px;
+      background: #f0f0f0;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+      border: none;
+      color: #555;
+    }
+    
+    .category-tab:hover {
+      background: #e0e0e0;
+    }
+    
+    .category-tab.active {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .category-tab.all-tab {
+      background: #2c3e50;
+      color: white;
+    }
+    
+    .add-category-btn {
+      background: transparent;
+      color: var(--primary-color);
+      border: 1px dashed var(--primary-color);
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .add-category-btn:hover {
+      background: rgba(86, 190, 207, 0.1);
+    }
+    
+    .add-category-form {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-left: 10px;
+    }
+    
+    .add-category-form input {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 14px;
+      width: 150px;
+    }
+    
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      .sidebar {
+        transform: translateX(-100%);
+      }
+      
+      .sidebar.active {
+        transform: translateX(0);
+      }
+      
+      .main-content {
+        margin-left: 0;
+      }
+      
+      .menu-toggle {
+        display: block !important;
+      }
+      
+      .category-tabs {
+        overflow-x: auto;
+        padding-bottom: 5px;
+        flex-wrap: nowrap;
+      }
+    }
+    
+    /* 动画 */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes fadeOut {
+      from { opacity: 1; transform: translateY(0); }
+      to { opacity: 0; transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <!-- 侧边导航栏 -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="images/H.jpg" alt="Logo">
+      <h3>内容管理系统</h3>
+    </div>
+    <div class="sidebar-menu">
+      <div class="menu-item active">
+        <i class="fas fa-home"></i>
+        <span>首页管理</span>
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-blog"></i>
+        <span>博客管理</span>
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-user"></i>
+        <span>关于页面</span>
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-cog"></i>
+        <span>系统设置</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主内容区 -->
+  <div class="main-content">
+    <header>
+      <div class="header-left">
+        <button class="menu-toggle" style="display: none;">
+          <i class="fas fa-bars"></i>
+        </button>
+        <h2>首页管理</h2>
+      </div>
+      <div class="header-right">
+        <button class="logout-btn" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i> 退出登录
+        </button>
+      </div>
+    </header>
+
+    <div class="content-area">
+      <!-- 首页横幅设置 -->
+      <div class="editor-panel">
+        <div class="panel-header">
+          <h2>首页横幅设置</h2>
+        </div>
+        <div class="form-group">
+          <label>主标题</label>
+          <input type="text" id="hero-title" placeholder="例如：欢迎来到我的作品网站">
+        </div>
+        <div class="form-group">
+          <label>副标题</label>
+          <input type="text" id="hero-subtitle" placeholder="例如：我是HughBor...">
+        </div>
+        <div class="form-group">
+          <label>描述文字</label>
+          <textarea id="hero-description" rows="4"></textarea>
+        </div>
+        <button onclick="saveHero()">
+          <i class="fas fa-save"></i> 保存横幅设置
+        </button>
+      </div>
+
+      <!-- 项目管理 -->
+      <div class="editor-panel">
+        <div class="panel-header">
+          <h2>项目管理</h2>
+          <div>
+            <div class="search-bar">
+              <input type="text" id="project-search" placeholder="搜索项目..." style="width: 200px;">
+            </div>
+            <button onclick="showAddProjectForm()">
+              <i class="fas fa-plus"></i> 添加新项目
+            </button>
+          </div>
+        </div>
+        
+        <!-- 标签分类选项卡 -->
+        <div id="category-tabs-container" class="category-tabs">
+          <!-- 动态生成标签选项卡 -->
+          <div class="loading">加载分类中...</div>
+        </div>
+        
+        <div id="projects-list" class="projects-container">
+          <div class="loading">加载中...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 项目编辑表单模板 -->
+  <template id="project-form-template">
+    <div class="project-form">
+      <h3 class="form-title">添加新项目</h3>
+      
+      <div class="form-group">
+        <label>项目类型</label>
+        <select class="project-type">
+          <option value="image">图片</option>
+          <option value="video">视频</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>标题</label>
+        <input type="text" class="project-title">
+      </div>
+      
+      <div class="form-group">
+        <label>分类</label>
+        <select class="project-category">
+          <option value="平面">平面</option>
+          <option value="物料">物料</option>
+          <option value="三维">三维</option>
+          <option value="AI">AI</option>
+          <option value="摄影">摄影</option>
+          <option value="其它">其它</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>上传缩略图</label>
+        <input type="file" class="thumbnail-upload" accept="image/*">
+        <div class="preview-container thumbnail-preview"></div>
+        <input type="text" class="project-thumbnail" placeholder="或直接输入图片URL">
+      </div>
+      
+      <div class="form-group">
+        <label>内容文件</label>
+        <input type="file" class="content-upload" multiple accept="image/*, video/*">
+        <div class="preview-container content-preview"></div>
+        <textarea class="project-contentUrls" rows="3" placeholder="输入内容URL，多个URL用逗号分隔"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label>日期</label>
+        <input type="date" class="project-date">
+      </div>
+      
+      <div class="form-group">
+        <label>描述</label>
+        <textarea class="project-description" rows="3"></textarea>
+      </div>
+      
+      <button class="save-project">
+        <i class="fas fa-save"></i> 保存项目
+      </button>
+      <button class="cancel-edit danger">
+        <i class="fas fa-times"></i> 取消
+      </button>
+    </div>
+  </template>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage-compat.js"></script>
+
+  <script>
+    // ================= 初始化Firebase =================
+    const firebaseConfig = {
+      apiKey: "AIzaSyAYxqgwZ0co1WaWztRDU6S4a9G57RO3vdQ",
+      authDomain: "hughbor-static-site-cms.firebaseapp.com",
+      projectId: "hughbor-static-site-cms",
+      storageBucket: "hughbor-static-site-cms.appspot.com",
+      messagingSenderId: "994607511307",
+      appId: "1:994607511307:web:a74132e2b32c36d9a3540e"
+    };
+
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    const storage = firebase.storage();
+
+    // ================= 全局变量 =================
+    let editingProjectId = null;
+    let currentUser = null;
+    let currentFormElement = null;
+    let allProjects = [];
+    let allCategories = [];
+    let currentCategory = "全部";
+
+    // ================= 认证状态管理 =================
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        currentUser = user;
+        console.log("用户已登录:", user.email);
+        loadContent();
+      } else {
+        console.log("未登录，跳转到登录页");
+        window.location.href = "login.html";
+      }
+    });
+
+    function logout() {
+      auth.signOut()
+        .then(() => window.location.href = "login.html")
+        .catch(error => showAlert("退出失败: " + error.message, "error"));
+    }
+
+    // ================= 首页横幅管理 =================
+    async function saveHero() {
+      const title = document.getElementById("hero-title").value.trim();
+      const subtitle = document.getElementById("hero-subtitle").value.trim();
+      const description = document.getElementById("hero-description").value.trim();
+      
+      if (!title) {
+        showAlert("主标题不能为空", "error");
+        return;
+      }
+
+      try {
+        await db.collection("contents").doc("home_hero").set({
+          title: title,
+          subtitle: subtitle,
+          description: description,
+          lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
+        });
+        showAlert("首页横幅已保存！", "success");
+      } catch (error) {
+        console.error("保存失败:", error);
+        showAlert("保存失败: " + error.message, "error");
+      }
+    }
+
+    // ================= 项目管理 =================
+    async function loadContent() {
+      try {
+        const projectsList = document.getElementById("projects-list");
+        projectsList.innerHTML = '<div class="loading">加载中...</div>';
+
+        // 加载首页横幅
+        const heroDoc = await db.collection("contents").doc("home_hero").get();
+        if (heroDoc.exists) {
+          const data = heroDoc.data();
+          document.getElementById("hero-title").value = data.title || "";
+          document.getElementById("hero-subtitle").value = data.subtitle || "";
+          document.getElementById("hero-description").value = data.description || "";
+        }
+
+        // 加载项目列表 - 按日期降序排列
+        const querySnapshot = await db.collection("projects").orderBy("date", "desc").get();
+        
+        allProjects = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+
+        // 提取所有分类
+        extractCategories();
+        
+        // 渲染分类选项卡
+        renderCategoryTabs();
+        
+        // 渲染项目列表
+        renderProjects(filterProjectsByCategory());
+      } catch (error) {
+        console.error("加载失败:", error);
+        document.getElementById("projects-list").innerHTML = `
+          <p class="error">加载错误: ${error.message}</p>
+        `;
+      }
+    }
+
+    // 提取所有分类
+    function extractCategories() {
+      const categories = new Set();
+      allProjects.forEach(project => {
+        if (project.category) {
+          categories.add(project.category);
+        }
+      });
+      allCategories = Array.from(categories).sort();
+    }
+
+    // 渲染分类选项卡
+    function renderCategoryTabs() {
+      const tabsContainer = document.getElementById("category-tabs-container");
+      if (!tabsContainer) return;
+      
+      let tabsHTML = `
+        <button class="category-tab all-tab active" onclick="changeCategory('全部')">
+          全部
+        </button>
+      `;
+      
+      allCategories.forEach(category => {
+        tabsHTML += `
+          <button class="category-tab ${currentCategory === category ? 'active' : ''}" 
+                  onclick="changeCategory('${category}')">
+            ${category}
+          </button>
+        `;
+      });
+      
+      // 添加新建分类按钮
+      tabsHTML += `
+        <button class="add-category-btn" onclick="showAddCategoryForm()">
+          <i class="fas fa-plus"></i> 新建分类
+        </button>
+      `;
+      
+      tabsContainer.innerHTML = tabsHTML;
+    }
+
+    // 显示添加分类表单
+    function showAddCategoryForm() {
+      const tabsContainer = document.getElementById("category-tabs-container");
+      if (!tabsContainer) return;
+      
+      // 移除现有的添加表单（如果有）
+      const existingForm = tabsContainer.querySelector('.add-category-form');
+      if (existingForm) {
+        existingForm.remove();
+        return;
+      }
+      
+      const formHTML = `
+        <div class="add-category-form">
+          <input type="text" id="new-category-name" placeholder="输入新分类名称">
+          <button onclick="addNewCategory()">
+            <i class="fas fa-check"></i>
+          </button>
+          <button onclick="this.parentElement.remove()" class="danger">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      `;
+      
+      tabsContainer.insertAdjacentHTML('beforeend', formHTML);
+      document.getElementById("new-category-name").focus();
+    }
+
+    // 添加新分类
+    function addNewCategory() {
+      const newCategoryInput = document.getElementById("new-category-name");
+      if (!newCategoryInput) return;
+      
+      const newCategory = newCategoryInput.value.trim();
+      if (!newCategory) {
+        showAlert("分类名称不能为空", "error");
+        return;
+      }
+      
+      if (allCategories.includes(newCategory)) {
+        showAlert("该分类已存在", "error");
+        return;
+      }
+      
+      allCategories.push(newCategory);
+      allCategories.sort();
+      
+      // 移除表单
+      newCategoryInput.closest('.add-category-form').remove();
+      
+      // 重新渲染分类选项卡
+      renderCategoryTabs();
+      
+      // 切换到新分类
+      changeCategory(newCategory);
+      
+      showAlert(`分类 "${newCategory}" 已添加`, "success");
+    }
+
+    // 切换分类
+    function changeCategory(category) {
+      currentCategory = category;
+      
+      // 更新选项卡激活状态
+      const tabs = document.querySelectorAll('.category-tab');
+      tabs.forEach(tab => {
+        if (tab.textContent.trim() === category) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+      
+      // 特殊处理"全部"选项卡
+      const allTab = document.querySelector('.all-tab');
+      if (allTab) {
+        if (category === "全部") {
+          allTab.classList.add('active');
+        } else {
+          allTab.classList.remove('active');
+        }
+      }
+      
+      // 渲染项目
+      renderProjects(filterProjectsByCategory());
+    }
+
+    // 根据当前分类筛选项目
+    function filterProjectsByCategory() {
+      if (currentCategory === "全部") {
+        return allProjects;
+      }
+      return allProjects.filter(project => project.category === currentCategory);
+    }
+
+    function renderProjects(projects) {
+      const projectsList = document.getElementById("projects-list");
+      
+      if (!projects || projects.length === 0) {
+        projectsList.innerHTML = `<p>${currentCategory === "全部" ? "暂无项目" : "该分类下暂无项目"}</p>`;
+        return;
+      }
+
+      let projectsHTML = '';
+
+      projects.forEach(project => {
+        projectsHTML += `
+          <div class="project-item" data-id="${project.id}">
+            <h3>${project.title || "未命名项目"} 
+              <span class="project-category">(${project.category || "未分类"})</span>
+            </h3>
+            <div class="project-meta">
+              <span>类型: ${project.type || "未指定"}</span> | 
+              <span>日期: ${project.date || "未设置"}</span>
+            </div>
+            <p class="project-description">${project.description || "暂无描述"}</p>
+            <div class="project-actions">
+              <button onclick="editProject('${project.id}', this)">
+                <i class="fas fa-edit"></i> 编辑
+              </button>
+              <button onclick="deleteProject('${project.id}')" class="danger">
+                <i class="fas fa-trash"></i> 删除
+              </button>
+            </div>
+          </div>
+        `;
+      });
+
+      projectsList.innerHTML = projectsHTML;
+      
+      // 初始化搜索功能
+      setupSearch();
+    }
+
+    function showAddProjectForm() {
+      // 关闭任何已打开的表单
+      if (currentFormElement) {
+        currentFormElement.remove();
+        currentFormElement = null;
+      }
+
+      editingProjectId = null;
+      const projectsList = document.getElementById("projects-list");
+      
+      // 创建新表单
+      const formTemplate = document.getElementById("project-form-template");
+      const formClone = formTemplate.content.cloneNode(true);
+      const formElement = formClone.querySelector(".project-form");
+      formElement.querySelector(".form-title").textContent = "添加新项目";
+      formElement.style.display = "block";
+      
+      // 插入到列表顶部
+      projectsList.insertBefore(formClone, projectsList.firstChild);
+      currentFormElement = formElement;
+      
+      // 初始化表单
+      initProjectForm(formElement);
+      
+      // 滚动到表单
+      formElement.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    async function editProject(projectId, buttonElement) {
+      try {
+        // 关闭任何已打开的表单
+        if (currentFormElement) {
+          currentFormElement.remove();
+          currentFormElement = null;
+        }
+
+        const doc = await db.collection("projects").doc(projectId).get();
+        if (!doc.exists) {
+          throw new Error("项目不存在");
+        }
+
+        editingProjectId = projectId;
+        const projectItem = buttonElement.closest(".project-item");
+        
+        // 创建表单
+        const formTemplate = document.getElementById("project-form-template");
+        const formClone = formTemplate.content.cloneNode(true);
+        const formElement = formClone.querySelector(".project-form");
+        formElement.querySelector(".form-title").textContent = "编辑项目";
+        formElement.style.display = "block";
+        
+        // 插入到当前项目后面
+        projectItem.parentNode.insertBefore(formClone, projectItem.nextSibling);
+        currentFormElement = formElement;
+        
+        // 填充表单数据
+        const project = doc.data();
+        fillProjectForm(formElement, project);
+        
+        // 初始化表单
+        initProjectForm(formElement);
+        
+        // 滚动到表单
+        formElement.scrollIntoView({ behavior: 'smooth' });
+      } catch (error) {
+        console.error("编辑失败:", error);
+        showAlert("加载项目失败: " + error.message, "error");
+      }
+    }
+
+    function initProjectForm(formElement) {
+      // 初始化日期字段为今天
+      const today = new Date().toISOString().split('T')[0];
+      formElement.querySelector('.project-date').value = today;
+      
+      // 设置保存按钮事件
+      formElement.querySelector('.save-project').addEventListener('click', () => {
+        saveProjectForm(formElement);
+      });
+      
+      // 设置取消按钮事件
+      formElement.querySelector('.cancel-edit').addEventListener('click', () => {
+        formElement.remove();
+        currentFormElement = null;
+        editingProjectId = null;
+      });
+      
+      // 设置文件上传事件
+      setupFileUploads(formElement);
+    }
+
+    function fillProjectForm(formElement, project) {
+      formElement.querySelector('.project-type').value = project.type || "image";
+      formElement.querySelector('.project-title').value = project.title || "";
+      formElement.querySelector('.project-category').value = project.category || "平面";
+      formElement.querySelector('.project-contentUrls').value = 
+        Array.isArray(project.contentUrl) ? project.contentUrl.join(", ") : project.contentUrl || "";
+      formElement.querySelector('.project-thumbnail').value = project.thumbnail || "";
+      formElement.querySelector('.project-date').value = project.date || new Date().toISOString().split('T')[0];
+      formElement.querySelector('.project-description').value = project.description || "";
+      
+      // 显示预览
+      const thumbnailPreview = formElement.querySelector('.thumbnail-preview');
+      thumbnailPreview.innerHTML = "";
+      if (project.thumbnail) {
+        const img = document.createElement("img");
+        img.src = project.thumbnail;
+        img.style.maxWidth = "200px";
+        thumbnailPreview.appendChild(img);
+      }
+      
+      const contentPreview = formElement.querySelector('.content-preview');
+      contentPreview.innerHTML = "";
+      if (project.contentUrl && project.contentUrl.length > 0) {
+        const urls = Array.isArray(project.contentUrl) ? project.contentUrl : [project.contentUrl];
+        urls.forEach(url => {
+          if (url.match(/\.(mp4|mov|avi)$/i)) {
+            const video = document.createElement("video");
+            video.src = url;
+            video.controls = true;
+            video.style.maxWidth = "100px";
+            contentPreview.appendChild(video);
+          } else {
+            const img = document.createElement("img");
+            img.src = url;
+            img.style.maxWidth = "100px";
+            contentPreview.appendChild(img);
+          }
+        });
+      }
+    }
+
+    async function saveProjectForm(formElement) {
+      try {
+        // 验证数据
+        const title = formElement.querySelector('.project-title').value.trim();
+        const contentUrls = formElement.querySelector('.project-contentUrls').value
+          .split(',')
+          .map(url => url.trim())
+          .filter(url => url.length > 0);
+        
+        if (!title) {
+          throw new Error("标题不能为空");
+        }
+        
+        if (contentUrls.length === 0) {
+          throw new Error("至少需要一个内容URL");
+        }
+
+        const projectData = {
+          type: formElement.querySelector('.project-type').value,
+          title: title,
+          category: formElement.querySelector('.project-category').value,
+          contentUrl: contentUrls,
+          thumbnail: formElement.querySelector('.project-thumbnail').value.trim(),
+          date: formElement.querySelector('.project-date').value,
+          description: formElement.querySelector('.project-description').value.trim(),
+          updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+        };
+
+        // 如果是新建项目，添加创建时间
+        if (!editingProjectId) {
+          projectData.createdAt = firebase.firestore.FieldValue.serverTimestamp();
+        }
+
+        // 保存到Firestore
+        if (editingProjectId) {
+          await db.collection("projects").doc(editingProjectId).update(projectData);
+          showAlert("项目更新成功！", "success");
+        } else {
+          await db.collection("projects").add(projectData);
+          showAlert("项目添加成功！", "success");
+        }
+
+        formElement.remove();
+        currentFormElement = null;
+        editingProjectId = null;
+        loadContent(); // 重新加载内容以更新分类列表
+      } catch (error) {
+        console.error("保存失败:", error);
+        showAlert("保存失败: " + error.message, "error");
+      }
+    }
+
+    async function deleteProject(projectId) {
+      if (!confirm("确定要删除这个项目吗？此操作不可撤销！")) {
+        return;
+      }
+
+      try {
+        // 先删除存储中的文件（如果有）
+        const projectDoc = await db.collection("projects").doc(projectId).get();
+        if (projectDoc.exists) {
+          const project = projectDoc.data();
+          
+          // 删除缩略图
+          if (project.thumbnail) {
+            try {
+              const thumbRef = storage.refFromURL(project.thumbnail);
+              await thumbRef.delete();
+            } catch (storageError) {
+              console.warn("缩略图删除失败:", storageError);
+            }
+          }
+          
+          // 删除内容文件
+          if (Array.isArray(project.contentUrl)) {
+            for (const url of project.contentUrl) {
+              try {
+                const fileRef = storage.refFromURL(url);
+                await fileRef.delete();
+              } catch (storageError) {
+                console.warn("内容文件删除失败:", url, storageError);
+              }
+            }
+          }
+        }
+        
+        // 删除Firestore文档
+        await db.collection("projects").doc(projectId).delete();
+        showAlert("项目已删除", "success");
+        loadContent(); // 重新加载内容以更新分类列表
+      } catch (error) {
+        console.error("删除失败:", error);
+        showAlert("删除失败: " + error.message, "error");
+      }
+    }
+
+    // ================= 文件上传处理 =================
+    function setupFileUploads(formElement) {
+      if (!formElement) return;
+      
+      const thumbnailUpload = formElement.querySelector('.thumbnail-upload');
+      const contentUpload = formElement.querySelector('.content-upload');
+      
+      thumbnailUpload?.addEventListener('change', async function(e) {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        try {
+          const preview = formElement.querySelector('.thumbnail-preview');
+          preview.innerHTML = '<p>上传中...</p>';
+          
+          const storageRef = storage.ref(`thumbnails/${currentUser.uid}/${Date.now()}_${file.name}`);
+          const snapshot = await storageRef.put(file);
+          const downloadURL = await snapshot.ref.getDownloadURL();
+          
+          formElement.querySelector('.project-thumbnail').value = downloadURL;
+          preview.innerHTML = `
+            <img src="${downloadURL}" style="max-width:200px;">
+            <p>上传成功！</p>
+          `;
+        } catch (error) {
+          console.error("上传失败:", error);
+          const preview = formElement.querySelector('.thumbnail-preview');
+          preview.innerHTML = `<p style="color:red;">上传失败: ${error.message}</p>`;
+        }
+      });
+
+      contentUpload?.addEventListener('change', async function(e) {
+        const files = e.target.files;
+        if (!files || files.length === 0) return;
+
+        try {
+          const preview = formElement.querySelector('.content-preview');
+          preview.innerHTML = '<p>上传中...</p>';
+          
+          let urls = [];
+          for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            const storageRef = storage.ref(`content/${currentUser.uid}/${Date.now()}_${file.name}`);
+            const snapshot = await storageRef.put(file);
+            const downloadURL = await snapshot.ref.getDownloadURL();
+            urls.push(downloadURL);
+          }
+
+          const currentUrls = formElement.querySelector('.project-contentUrls').value;
+          const newUrls = currentUrls ? currentUrls.split(',').map(url => url.trim()) : [];
+          formElement.querySelector('.project-contentUrls').value = [...newUrls, ...urls].join(', ');
+          
+          // 更新预览
+          preview.innerHTML = urls.map(url => 
+            url.match(/\.(mp4|mov|avi)$/i) ?
+              `<video src="${url}" controls style="max-width:100px;"></video>` :
+              `<img src="${url}" style="max-width:100px;">`
+          ).join('');
+          
+          showAlert(`成功上传 ${urls.length} 个文件`, "success");
+        } catch (error) {
+          console.error("上传失败:", error);
+          const preview = formElement.querySelector('.content-preview');
+          preview.innerHTML = `<p style="color:red;">上传失败: ${error.message}</p>`;
+        }
+      });
+    }
+
+    // ================= 搜索功能 =================
+    function setupSearch() {
+      const searchInput = document.getElementById('project-search');
+      if (!searchInput) return;
+      
+      searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        
+        if (searchTerm === '') {
+          renderProjects(filterProjectsByCategory());
+          return;
+        }
+        
+        const filteredProjects = allProjects.filter(project => {
+          return (
+            (project.title && project.title.toLowerCase().includes(searchTerm)) ||
+            (project.description && project.description.toLowerCase().includes(searchTerm)) ||
+            (project.category && project.category.toLowerCase().includes(searchTerm))
+          );
+        });
+        
+        renderProjects(filteredProjects);
+      });
+    }
+
+    // ================= 辅助函数 =================
+    function showAlert(message, type = "info") {
+      const alertDiv = document.createElement("div");
+      alertDiv.className = `alert alert-${type}`;
+      alertDiv.textContent = message;
+      alertDiv.style.position = "fixed";
+      alertDiv.style.top = "20px";
+      alertDiv.style.right = "20px";
+      alertDiv.style.padding = "12px 24px";
+      alertDiv.style.borderRadius = "4px";
+      alertDiv.style.color = "white";
+      alertDiv.style.zIndex = "1000";
+      alertDiv.style.animation = "fadeIn 0.3s";
+      
+      if (type === "success") {
+        alertDiv.style.background = "#4CAF50";
+      } else if (type === "error") {
+        alertDiv.style.background = "#F44336";
+      } else {
+        alertDiv.style.background = "#2196F3";
+      }
+      
+      document.body.appendChild(alertDiv);
+      
+      setTimeout(() => {
+        alertDiv.style.animation = "fadeOut 0.3s";
+        setTimeout(() => alertDiv.remove(), 300);
+      }, 3000);
+    }
+
+    // ================= 初始化 =================
+    document.addEventListener('DOMContentLoaded', () => {
+      // 响应式菜单切换
+      const menuToggle = document.querySelector('.menu-toggle');
+      const sidebar = document.querySelector('.sidebar');
+      
+      if (menuToggle && sidebar) {
+        menuToggle.addEventListener('click', () => {
+          sidebar.classList.toggle('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

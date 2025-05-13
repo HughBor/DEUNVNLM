@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>登录</title>
+  <link rel="stylesheet" href="style.css">
+    <!-- 必须添加的Firebase库 -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      text-align: center;
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    button {
+      background: #56becf;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>网站管理登录</h2>
+    <input type="email" id="email" placeholder="邮箱">
+    <input type="password" id="password" placeholder="密码">
+    <button onclick="login()">登录</button>
+  </div>
+
+  <script>
+    // 正确的初始化方式
+  const firebaseConfig = {
+  apiKey: "AIzaSyAYxqgwZ0co1WaWztRDU6S4a9G57RO3vdQ",
+  authDomain: "hughbor-static-site-cms.firebaseapp.com",
+  projectId: "hughbor-static-site-cms",
+  storageBucket: "hughbor-static-site-cms.firebasestorage.app",
+  messagingSenderId: "994607511307",
+  appId: "1:994607511307:web:a74132e2b32c36d9a3540e"
+};
+
+    // 确保先初始化app再获取auth
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    function login() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      
+      auth.signInWithEmailAndPassword(email, password)
+        .then(() => {
+          window.location.href = "admin.html";
+        })
+        .catch(error => {
+          console.error("登录错误详情:", error);
+          alert("登录失败: " + error.message);
+        });
+    }
+  </script>
+</body>
+</html>
