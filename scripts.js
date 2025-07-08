@@ -99,7 +99,7 @@ const contentData = [
   {
     type: "image",
     title: "电动升降桌系列-C4D静帧",
-    contentUrl: ["images/SanWei/沃尔玛品牌横幅.jpg","images/SanWei/A+电机管材.jpg"],
+    contentUrl: ["images/SanWei/Venace SJZ ZaXiang/沃尔玛品牌横幅.jpg","images/SanWei/Venace SJZ ZaXiang/A+电机管材.jpg","images/SanWei/Venace SJZ ZaXiang/主图48黑-木色.jpg","images/SanWei/Venace SJZ ZaXiang/主图55黑-改.jpg"],
     thumbnail: "images/SanWei/沃尔玛品牌横幅-封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 004",
