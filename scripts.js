@@ -40,7 +40,7 @@ const contentData = [
 
  {
     type: "video",
-    title: "电动升降桌安装动画系列Demo-KS动画",
+    title: "电动升降桌安装动画Demo-KS动画",
     contentUrl: ["videos/Work/电动升降桌1200-安装视频 无配件文案 压缩.mp4", "videos/Work/L型升降桌-安装视频 无文案.mp4"],
     thumbnail: "images/SanWei/L型升降桌-安装视频 无文案封面.jpg",
     category: "三维",
@@ -128,7 +128,8 @@ const contentData = [
   {
     type: "image",
     title: "其它三维任务",
-    contentUrl: ["images/SanWei/Small Work/三维2209-水阀定时器.jpg"],
+    contentUrl: ["images/SanWei/Small Work/三维2209-水阀定时器.jpg", "images/SanWei/Small Work/维纳斯装修01.jpg", "images/SanWei/Small Work/维纳斯装修02.jpg", "images/SanWei/Small Work/维纳斯装修03.jpg", "images/SanWei/Small Work/维纳斯装修04.jpg", 
+                 "images/SanWei/Small Work/维纳斯装修05.jpg", "images/SanWei/Small Work/维纳斯装修06.jpg",],
     thumbnail: "images/SanWei/Small Work/三维2209-水阀定时器封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 001",
