@@ -127,7 +127,7 @@ const contentData = [
   },
   {
     type: "image",
-    title: "工作中杂项三维任务",
+    title: "其它三维任务",
     contentUrl: ["images/SanWei/Small Work/三维2209-水阀定时器.jpg"],
     thumbnail: "images/SanWei/Small Work/三维2209-水阀定时器封面.jpg",
     category: "三维",
