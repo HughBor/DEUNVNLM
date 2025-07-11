@@ -146,7 +146,7 @@ const contentData = [
     date: "2025-02"
   }, /* 以上是AI */
 
-  {
+/**  {
     type: "image",
     title: "摄影图集",
     contentUrl: ["images/GoPro运动相机.jpg", "images/音响.jpg", "images/游戏机小场景.jpg"],
@@ -154,7 +154,8 @@ const contentData = [
     category: "摄影",
     contentId: "Photographic 001",
     date: "2025-02"
-  }, /* 以上是摄影 */
+  }, **/
+/* 以上是摄影 */
 
   {
     type: "image",
