@@ -143,7 +143,7 @@ const contentData = [
     thumbnail: "images/布料结构特写.jpg",
     category: "AI",
     contentId: "Artificial Intelligence 001",
-    date: "2025-02"
+    date: "1996-01"
   }, /* 以上是AI */
 
 /**  {
