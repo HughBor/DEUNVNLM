@@ -118,7 +118,7 @@ const contentData = [
     type: "image",
     title: "三维专题渲染-2024及之前",
     contentUrl: ["images/SanWei/Before 2025/三维2312-音箱.jpg", "images/SanWei/Before 2025/三维2307-耳机.jpg", "images/SanWei/Before 2025/三维2305-桌子1.jpg", "images/SanWei/Before 2025/三维2305-桌子2.jpg", 
-                 "images/SanWei/Before 2025/三维2305-桌子3.jpg", "images/SanWei/Before 2025/三维2304-Vicis01橄榄球头盔.jpg", "images/SanWei/Before 2025/三维2303-音箱.jpg", 
+                 "images/SanWei/Before 2025/三维2305-桌子3.jpg", "images/SanWei/Before 2025/三维2304-Vicis01橄榄球头盔.jpg", "images/SanWei/Before 2025/三维2304-相机写实场景.jpg", "images/SanWei/Before 2025/三维2303-音箱.jpg", 
                  "images/SanWei/Before 2025/三维2303-B&O头戴式耳机.jpg", "images/SanWei/Before 2025/三维2211-音箱.jpg", "images/SanWei/Before 2025/GoPro运动相机.jpg"],
     thumbnail: "images/SanWei/Before 2025/GoPro运动相机-封面.jpg",
     category: "三维",
