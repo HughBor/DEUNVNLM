@@ -30,11 +30,20 @@ const contentData = [
   
   {
     type: "image",
+    title: "匹克球拍板",
+    contentUrl: ["images/WuLiao/匹克球球拍样机1.jpg", "images/WuLiao/匹克球球拍样机2.jpg","images/WuLiao/匹克球球拍样机3.jpg"],
+    thumbnail: "images/WuLiao/匹克球球拍样机1-封面.jpg",
+    category: "物料",
+    contentId: "Materiel 001",
+    date: "2022-05"
+  },
+ {
+    type: "image",
     title: "儿童益智画说明书",
     contentUrl: ["images/WuLiao/PBD12说明书.jpg", "images/WuLiao/岩石画说明书.jpg","images/WuLiao/数字颜色迷宫板.jpg"],
     thumbnail: "images/WuLiao/PBD12说明书-封面.jpg",
     category: "物料",
-    contentId: "Materiel 001",
+    contentId: "Materiel 002",
     date: "2022-08"
   }, /* 以上是物料 */
 
