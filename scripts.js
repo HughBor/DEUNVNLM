@@ -31,7 +31,7 @@ const contentData = [
   {
     type: "image",
     title: "匹克球拍板",
-    contentUrl: ["images/WuLiao/匹克球球拍样机1.jpg", "images/WuLiao/匹克球球拍样机2.jpg","images/WuLiao/匹克球球拍样机3.jpg"],
+    contentUrl: ["images/WuLiao/匹克球球拍样机1.jpg", "images/WuLiao/匹克球球拍样机2.jpg", "images/WuLiao/匹克球球拍样机3.jpg", "images/WuLiao/物料2211-SWFG1说明书1.jpg", "images/WuLiao/物料2211-SWFG1说明书2.jpg", ],
     thumbnail: "images/WuLiao/匹克球球拍样机1-封面.jpg",
     category: "物料",
     contentId: "Materiel 001",
