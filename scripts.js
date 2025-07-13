@@ -26,6 +26,7 @@ const contentData = [
     category: "平面",
     contentId: "Graphic 002",
     date: "2020-12",
+  },
   {
     type: "image",
     title: "节日/产品海报展示",
