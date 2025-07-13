@@ -5,7 +5,7 @@ const contentData = [
     contentUrl: ["images/PingMian/微波炉场景.jpg"],
     thumbnail: "images/PingMian/微波炉场景-封面.jpg",
     category: "平面",
-    contentId: "Graphic 003",
+    contentId: "Graphic 004",
     date: "2023-09",
     description: "这是微波炉海报的场景搭建设计。" // 新增的文本内容
   }, 
@@ -15,9 +15,17 @@ const contentData = [
     contentUrl: ["images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg"],
     thumbnail: "images/PingMian/XiuTu/修图2307-黑色铁艺灯封面.jpg",
     category: "平面",
-    contentId: "Graphic 002",
+    contentId: "Graphic 003",
     date: "2023-07",
   },
+ {
+    type: "image",
+    title: "产品视觉-剃须刀BT255",
+    contentUrl: ["images/PingMian/ChanPin/BaCheng/BT355.jpg"],
+    thumbnail: "images/PingMian/ChanPin/BaCheng/BT355-封面.jpg",
+    category: "平面",
+    contentId: "Graphic 002",
+    date: "2020-12",
   {
     type: "image",
     title: "节日/产品海报展示",
