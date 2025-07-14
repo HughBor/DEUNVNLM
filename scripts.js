@@ -34,7 +34,7 @@ const contentData = [
     thumbnail: "images/PingMian/ChanPin/BaCheng/HC575-封面.jpg",
     category: "平面",
     contentId: "Graphic 003",
-    date: "2020-12",
+    date: "2021-04",
   },
  {
     type: "image",
