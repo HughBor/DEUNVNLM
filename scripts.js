@@ -5,10 +5,19 @@ const contentData = [
     contentUrl: ["images/PingMian/微波炉场景.jpg"],
     thumbnail: "images/PingMian/微波炉场景-封面.jpg",
     category: "平面",
-    contentId: "Graphic 004",
+    contentId: "Graphic 005",
     date: "2023-09",
     description: "这是微波炉海报的场景搭建设计。" // 新增的文本内容
   }, 
+ {
+    type: "image",
+    title: "产品视觉-板条灯",
+    contentUrl: ["images/PingMian/ChanPin/BiLiAn/板条灯.jpg"],
+    thumbnail: "images/PingMian/ChanPin/BiLiAn/板条灯-封面.jpg",
+    category: "平面",
+    contentId: "Graphic 004",
+    date: "2023-09",
+  },
   {
     type: "image",
     title: "修图回顾-2024及之前",
