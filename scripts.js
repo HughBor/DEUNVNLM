@@ -54,7 +54,16 @@ const contentData = [
     contentId: "Graphic 001",
     date: "2020-11",
   },/* 以上是平面 */
-  
+
+ {
+    type: "image",
+    title: "家居铰链导轨说明书",
+    contentUrl: ["images/WuLiao/铰链2in1说明书.jpg", "images/WuLiao/钢珠轨说明书-华绅.jpg"],
+    thumbnail: "images/WuLiao/钢珠轨说明书-华绅-封面.jpg",
+    category: "物料",
+    contentId: "Materiel 003",
+    date: "2024-03"
+  },
  {
     type: "image",
     title: "儿童益智画说明书",
