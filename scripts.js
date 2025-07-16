@@ -57,6 +57,15 @@ const contentData = [
 
  {
     type: "image",
+    title: "L型升降桌说明书",
+    contentUrl: ["images/WuLiao/L型升降桌说明书.jpg", "images/WuLiao/L型升降桌说明书页面1.jpg", "images/WuLiao/L型升降桌说明书2.jpg", "images/WuLiao/L型升降桌说明书背面.jpg", "images/WuLiao/升降桌-华尔兹-第一版包装对比.jpg"],
+    thumbnail: "images/WuLiao/L型升降桌说明书-封面.jpg",
+    category: "物料",
+    contentId: "Materiel 004",
+    date: "2025-01"
+  },
+ {
+    type: "image",
     title: "家居铰链导轨说明书",
     contentUrl: ["images/WuLiao/铰链2in1说明书.jpg", "images/WuLiao/钢珠轨说明书-华绅.jpg"],
     thumbnail: "images/WuLiao/钢珠轨说明书-华绅-封面.jpg",
