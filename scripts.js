@@ -21,7 +21,7 @@ const contentData = [
   {
     type: "image",
     title: "修图回顾-2024及之前",
-    contentUrl: ["images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg"],
+    contentUrl: ["images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg", "images/PingMian/XiuTu/BT415主图.jpg"],
     thumbnail: "images/PingMian/XiuTu/修图2307-黑色铁艺灯封面.jpg",
     category: "平面",
     contentId: "Graphic 004",
