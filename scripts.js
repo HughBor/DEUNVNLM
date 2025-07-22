@@ -5,7 +5,7 @@ const contentData = [
     contentUrl: ["images/PingMian/微波炉场景.jpg"],
     thumbnail: "images/PingMian/微波炉场景-封面.jpg",
     category: "平面",
-    contentId: "Graphic 009",
+    contentId: "Graphic 010",
     date: "2023-09",
     description: "这是微波炉海报的场景搭建设计。" // 新增的文本内容
   }, 
@@ -15,7 +15,7 @@ const contentData = [
     contentUrl: ["images/PingMian/ChanPin/BiLiAn/板条灯.jpg"],
     thumbnail: "images/PingMian/ChanPin/BiLiAn/板条灯-封面.jpg",
     category: "平面",
-    contentId: "Graphic 008",
+    contentId: "Graphic 009",
     date: "2023-09",
   },
   {
@@ -24,7 +24,7 @@ const contentData = [
     contentUrl: ["images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg", "images/PingMian/XiuTu/BT415主图.jpg"],
     thumbnail: "images/PingMian/XiuTu/修图2307-黑色铁艺灯封面.jpg",
     category: "平面",
-    contentId: "Graphic 007",
+    contentId: "Graphic 008",
     date: "2023-07",
   },
  {
@@ -33,7 +33,7 @@ const contentData = [
     contentUrl: ["images/PingMian/ChanPin/ShouJia/AM3.jpg"],
     thumbnail: "images/PingMian/ChanPin/ShouJia/AM3-封面.jpg",
     category: "平面",
-    contentId: "Graphic 006",
+    contentId: "Graphic 007",
     date: "2023-04",
   },
  {
@@ -42,8 +42,17 @@ const contentData = [
     contentUrl: ["images/PingMian/ChanPin/ShouJia/DG1.jpg"],
     thumbnail: "images/PingMian/ChanPin/ShouJia/DG1-封面.jpg",
     category: "平面",
-    contentId: "Graphic 005",
+    contentId: "Graphic 006",
     date: "2023-03",
+  },
+ {
+    type: "image",
+    title: "产品视觉-圣诞倒数日历",
+    contentUrl: ["images/PingMian/ChanPin/ShouJia/ACFT1.jpg"],
+    thumbnail: "images/PingMian/ChanPin/ShouJia/ACFT1-封面.jpg",
+    category: "平面",
+    contentId: "Graphic 005",
+    date: "2022-10",
   },
  {
     type: "image",
