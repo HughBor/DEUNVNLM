@@ -223,8 +223,8 @@ const contentData = [
   {
     type: "image",
     title: "其它三维任务",
-    contentUrl: ["images/SanWei/Small Work/三维2209-水阀定时器.jpg", "images/SanWei/Small Work/维纳斯装修01.jpg", "images/SanWei/Small Work/维纳斯装修02.jpg", "images/SanWei/Small Work/维纳斯装修03.jpg", "images/SanWei/Small Work/维纳斯装修04.jpg", 
-                 "images/SanWei/Small Work/维纳斯装修05.jpg", "images/SanWei/Small Work/维纳斯装修06.jpg",],
+    contentUrl: ["images/SanWei/Small Work/嵌入式烫衣板主图.jpg", "images/SanWei/Small Work/三维2209-水阀定时器.jpg", "images/SanWei/Small Work/维纳斯装修01.jpg", "images/SanWei/Small Work/维纳斯装修02.jpg", 
+                 "images/SanWei/Small Work/维纳斯装修03.jpg", "images/SanWei/Small Work/维纳斯装修04.jpg", "images/SanWei/Small Work/维纳斯装修05.jpg", "images/SanWei/Small Work/维纳斯装修06.jpg",],
     thumbnail: "images/SanWei/Small Work/三维2209-水阀定时器封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 001",
