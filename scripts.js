@@ -1,8 +1,8 @@
 const contentData = [
   {
     type: "image",
-    title: "修图-维纳斯铰链",
-    contentUrl: ["images/PingMian/XiuTu/Vvenace/铰链2in1.jpg", "images/PingMian/XiuTu/Vvenace/短臂铰链.jpg"],
+    title: "修图-维纳斯",
+    contentUrl: ["images/PingMian/XiuTu/Vvenace/铰链2in1.jpg", "images/PingMian/XiuTu/Vvenace/短臂铰链.jpg", "images/PingMian/XiuTu/Vvenace/钢珠轨-华绅-黑.jpg", "images/PingMian/XiuTu/Vvenace/钢珠轨-华绅-银.jpg"],
     thumbnail: "images/PingMian/XiuTu/Vvenace/铰链2in1-封面.jpg",
     category: "平面",
     contentId: "Graphic 011",
