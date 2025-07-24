@@ -1,6 +1,15 @@
 const contentData = [
   {
     type: "image",
+    title: "产品视觉-L型升降桌",
+    contentUrl: ["images/PingMian/ChanPin/Vvenace/L型升降桌.jpg"],
+    thumbnail: "images/PingMian/ChanPin/Vvenace/L型升降桌-封面.jpg",
+    category: "平面",
+    contentId: "Graphic 014",
+    date: "2025-06",
+  },
+  {
+    type: "image",
     title: "产品视觉-电动升降桌48+55+63",
     contentUrl: ["images/PingMian/ChanPin/Vvenace/电动升降桌48+55+63.jpg"],
     thumbnail: "images/PingMian/ChanPin/Vvenace/电动升降桌48+55+63-封面.jpg",
