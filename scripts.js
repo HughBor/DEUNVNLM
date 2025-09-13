@@ -184,7 +184,7 @@ const contentData = [
   },
  {
     type: "image",
-    title: "汽车专题渲染-C4D静帧练习",
+    title: "汽车专题渲染",
     contentUrl: ["images/SanWei/Auto/车轮01.jpg","images/SanWei/Auto/Huracan EVO RWD spyder 2021 01.jpg","images/SanWei/Auto/Huracan EVO RWD spyder 2021 侧面.jpg","images/SanWei/Auto/Huracan EVO RWD spyder 2021 场景.jpg",
                  "images/SanWei/Auto/Huracan EVO RWD spyder 2021 车尾.jpg","images/SanWei/Auto/Huracan EVO RWD spyder 2021 车尾整体.jpg","images/SanWei/Auto/Benz 300SL-01.jpg","images/SanWei/Auto/Benz 300SL-02.jpg",
                  "images/SanWei/Auto/Benz 300SL-03.jpg","images/SanWei/Auto/02 主图黑色.jpg","images/SanWei/Auto/03 轮胎.jpg","images/SanWei/Auto/05 几何.jpg","images/SanWei/Auto/07 俯视.jpg",
@@ -253,7 +253,7 @@ const contentData = [
   },
     {
     type: "image",
-    title: "三维专题渲染-2024及之前",
+    title: "三维专题渲染",
     contentUrl: ["images/SanWei/Before 2025/三维2406-家用储物柜室内场景.jpg", "images/SanWei/Before 2025/三维2312-音箱.jpg", "images/SanWei/Before 2025/三维2307-耳机.jpg", "images/SanWei/Before 2025/三维2307-蓝牙音箱.jpg", "images/SanWei/Before 2025/三维2305-桌子1.jpg", 
                  "images/SanWei/Before 2025/三维2305-桌子2.jpg", "images/SanWei/Before 2025/三维2305-桌子3.jpg", "images/SanWei/Before 2025/三维2305-DJI Inspire1.jpg", "images/SanWei/Before 2025/三维2305-DJI Inspire1-02.jpg", 
                  "images/SanWei/Before 2025/三维2305-DJI Inspire1-03.jpg", "images/SanWei/Before 2025/三维2305-DJI Inspire1遥控器.jpg", "images/SanWei/Before 2025/三维2305-DJI Inspire1遥控器-3.jpg", 
@@ -689,6 +689,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
