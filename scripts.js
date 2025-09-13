@@ -165,10 +165,10 @@ const contentData = [
   }, /* 以上是物料 */
 
   {
-    type: "video",
+    type: "image",
     title: "三维渲染专题 02",
-    contentUrl: ["SanWei 02/三维2509-室内透明手机壳.mp4"],
-    thumbnail: "images/SanWei/L型升降桌-安装视频 无文案封面.jpg",
+    contentUrl: ["SanWei 02/三维2509-室内透明手机壳.jpg"],
+    thumbnail: "SanWei 02/三维2509-室内透明手机壳 封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 011",
     date: "2025-09"
@@ -689,5 +689,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
