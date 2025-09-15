@@ -167,7 +167,7 @@ const contentData = [
   {
     type: "image",
     title: "三维渲染专题 02",
-    contentUrl: ["images/SanWei 02/三维2509-室内透明手机壳.jpg"],
+    contentUrl: ["images/SanWei 02/三维2509-室内透明手机壳.jpg", "vimages/SanWei 02/三维2509-修复水.jpg"],
     thumbnail: "images/SanWei 02/三维2509-室内透明手机壳 封面.jpg",
     category: "三维",
     contentId: "Three-dimensional 011",
@@ -689,6 +689,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
