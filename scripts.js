@@ -48,8 +48,8 @@ const contentData = [
   {
     type: "image",
     title: "工作修图",
-    contentUrl: ["images/PingMian/XiuTu/Vvenace/铰链2in1.jpg", "images/PingMian/XiuTu/Vvenace/短臂铰链.jpg", "images/PingMian/XiuTu/Vvenace/钢珠轨-华绅-黑.jpg", "images/PingMian/XiuTu/Vvenace/钢珠轨-华绅-银.jpg", 
-                 "images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg", "images/PingMian/XiuTu/BT415主图.jpg"],
+    contentUrl: ["images/PingMian/XiuTu/铰链2in1.jpg", "images/PingMian/XiuTu/短臂铰链.jpg", "images/PingMian/XiuTu/钢珠轨-华绅-黑.jpg", "images/PingMian/XiuTu/钢珠轨-华绅-银.jpg", "images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg", 
+                 "images/PingMian/XiuTu/BT415主图.jpg"],
     thumbnail: "images/PingMian/XiuTu/修图2307-黑色铁艺灯封面.jpg",
     category: "平面",
     contentId: "Graphic 008",
@@ -681,6 +681,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
