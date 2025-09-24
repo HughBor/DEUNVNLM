@@ -5,7 +5,7 @@ const contentData = [
     contentUrl: ["images/PingMian/ChanPin/Vvenace/L型升降桌.jpg"],
     thumbnail: "images/PingMian/ChanPin/Vvenace/L型升降桌-封面.jpg",
     category: "平面",
-    contentId: "Graphic 014",
+    contentId: "Graphic 013",
     date: "2025-06",
   },
   {
@@ -14,7 +14,7 @@ const contentData = [
     contentUrl: ["images/PingMian/ChanPin/Vvenace/电动升降桌48+55+63.jpg"],
     thumbnail: "images/PingMian/ChanPin/Vvenace/电动升降桌48+55+63-封面.jpg",
     category: "平面",
-    contentId: "Graphic 013",
+    contentId: "Graphic 012",
     date: "2024-10",
   },
   {
@@ -22,15 +22,6 @@ const contentData = [
     title: "产品视觉-铰链2in1",
     contentUrl: ["images/PingMian/ChanPin/Vvenace/铰链2in1-华绅.jpg"],
     thumbnail: "images/PingMian/ChanPin/Vvenace/铰链2in1-华绅-封面.jpg",
-    category: "平面",
-    contentId: "Graphic 012",
-    date: "2024-02",
-  },
-  {
-    type: "image",
-    title: "修图-维纳斯",
-    contentUrl: ["images/PingMian/XiuTu/Vvenace/铰链2in1.jpg", "images/PingMian/XiuTu/Vvenace/短臂铰链.jpg", "images/PingMian/XiuTu/Vvenace/钢珠轨-华绅-黑.jpg", "images/PingMian/XiuTu/Vvenace/钢珠轨-华绅-银.jpg"],
-    thumbnail: "images/PingMian/XiuTu/Vvenace/铰链2in1-封面.jpg",
     category: "平面",
     contentId: "Graphic 011",
     date: "2024-02",
@@ -57,7 +48,8 @@ const contentData = [
   {
     type: "image",
     title: "工作修图",
-    contentUrl: ["images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg", "images/PingMian/XiuTu/BT415主图.jpg"],
+    contentUrl: ["images/PingMian/XiuTu/Vvenace/铰链2in1.jpg", "images/PingMian/XiuTu/Vvenace/短臂铰链.jpg", "images/PingMian/XiuTu/Vvenace/钢珠轨-华绅-黑.jpg", "images/PingMian/XiuTu/Vvenace/钢珠轨-华绅-银.jpg", 
+                 "images/PingMian/XiuTu/修图2307-黑色铁艺灯.jpg", "images/PingMian/XiuTu/BT415主图.jpg"],
     thumbnail: "images/PingMian/XiuTu/修图2307-黑色铁艺灯封面.jpg",
     category: "平面",
     contentId: "Graphic 008",
@@ -689,6 +681,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
