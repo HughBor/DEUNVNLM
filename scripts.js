@@ -162,7 +162,7 @@ const contentData = [
     contentUrl: ["images/SanWei 02/三维2509-室内透明手机壳.jpg", "images/SanWei 02/三维2509-修复水.jpg", "images/SanWei 02/三维2509-充电器.jpg"],
     thumbnail: "images/SanWei 02/三维2509-室内透明手机壳 封面.jpg",
     category: "三维",
-    contentId: "Three-dimensional 011",
+    contentId: "Three-dimensional 008",
     date: "2025-09"
   },
  {
@@ -171,7 +171,7 @@ const contentData = [
     contentUrl: ["videos/Work/电动升降桌1200-安装视频 无配件文案 压缩.mp4", "videos/Work/L型升降桌-安装视频 无文案.mp4"],
     thumbnail: "images/SanWei/L型升降桌-安装视频 无文案封面.jpg",
     category: "三维",
-    contentId: "Three-dimensional 010",
+    contentId: "Three-dimensional 007",
     date: "2025-03"
   },
  {
@@ -183,45 +183,18 @@ const contentData = [
                  "images/SanWei/Auto/Audi RS6 Avant 01.jpg","images/SanWei/Auto/三维2207-奥迪Q7内饰.jpg"],
     thumbnail: "images/SanWei/Auto/车轮01-封面.jpg",
     category: "三维",
-    contentId: "Three-dimensional 009",
+    contentId: "Three-dimensional 006",
     date: "2025-03"
   },
- {
-    type: "video",
-    title: "大疆灵眸云台-KS动画练习",
-    contentUrl: ["videos/大疆灵眸云台.mp4","videos/口红.mp4"],  //多个视频
-    thumbnail: "images/SanWei/大疆灵眸云台-封面.jpg",
-    category: "三维",
-    contentId: "Three-dimensional 008",
-    date: "2025-03",
-    description: "有关一个云台的运动动画和一只口红的扫光动画练习。" // 新增的文本内容
-  },
   {
     type: "video",
-    title: "行李箱-KS动画练习",
-    contentUrl: ["videos/行李箱.mp4"],  //单个视频
+    title: "Keyshot动画 练习",
+    contentUrl: ["videos/大疆灵眸云台.mp4", "videos/口红.mp4", "videos/行李箱.mp4", "videos/Airpods Pro.mp4", "videos/RTX4090显卡.mp4"],  //单个视频
     thumbnail: "images/SanWei/行李箱-封面.jpg",
     category: "三维",
-    contentId: "Three-dimensional 007",
-    date: "2025-02"
-  },
-  {
-    type: "video",
-    title: "Airpods Pro-KS动画练习",
-    contentUrl: ["videos/Airpods Pro.mp4"],
-    thumbnail: "images/SanWei/Airpods Pro-封面.jpg",
-    category: "三维",
-    contentId: "Three-dimensional 006",
-    date: "2025-02"
-  },
-  {
-    type: "video",
-    title: "RTX4090-KS动画练习",
-    contentUrl: ["videos/RTX4090显卡.mp4"],
-    thumbnail: "images/SanWei/RTX4090-封面.jpg",
-    category: "三维",
     contentId: "Three-dimensional 005",
-    date: "2025-02"
+    date: "2025-03",
+    description: "RTX4090显卡、Airpods耳机、行李箱、口红、大疆灵眸云台。" // 新增的文本内容
   },
   {
     type: "image",
@@ -681,6 +654,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
