@@ -188,7 +188,7 @@ const contentData = [
   },
   {
     type: "video",
-    title: "Keyshot动画 练习",
+    title: "KS动画 练习",
     contentUrl: ["videos/大疆灵眸云台.mp4", "videos/口红.mp4", "videos/行李箱.mp4", "videos/Airpods Pro.mp4", "videos/RTX4090显卡.mp4"],  //单个视频
     thumbnail: "images/SanWei/行李箱-封面.jpg",
     category: "三维",
@@ -654,6 +654,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
